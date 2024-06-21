@@ -1,0 +1,557 @@
+//font-family: "Roboto Slab", serif
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.container
+  width: 1356px
+  margin: 0 auto
+
+body
+  font-family: "Exo 2", sans-serif
+  padding-top: 72px
+  color: #562C3E
+  background: #ffffff
+
+header
+  background: white
+  z-index: 100
+  height: 72px
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  align-items: center
+  display: flex
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+
+  .container
+    display: flex
+    align-items: center
+
+
+.links
+  display: flex
+  width: 604px
+  justify-content: space-evenly
+  align-items: center
+  height: 72px
+  position: relative
+  a
+    color: #562C3E
+    text-decoration: none
+    font-size: 15px
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    height: 30px
+    background: #EDEDED
+    width: 2px
+    transform: translateY(-50%)
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    height: 30px
+    background: #EDEDED
+    width: 2px
+    transform: translateY(-50%)
+
+.contactUs
+  margin-left: auto
+  display: flex
+  div
+    align-items: center
+    display: flex
+    color: #562C3E
+    font-weight: 500
+
+.logo
+  display: flex
+  margin-right: 76px
+
+.mrLeftMobile
+  margin-left: 27px
+
+.contactUs img
+  margin-right: 13px
+
+.swiper-container
+  width: 100%
+  height: 655px
+  overflow: hidden
+
+.swiper-container2
+  height: 655px
+  overflow: hidden
+
+.swiper-slideV1
+  position: relative
+  width: 1356px
+  height: 655px
+  background-color: red
+  filter: grayscale(100%)
+  opacity: 0.7
+  transition: filter 0.5s, opacity 0.5s
+  padding-left: 117px
+  padding-top: 100px
+
+
+.swiper-slideV2
+  position: relative
+  width: 665px
+  height: 500px
+  background-color: red
+  filter: grayscale(100%)
+  opacity: 0.7
+  transition: filter 0.5s, opacity 0.5s
+  padding-left: 117px
+  padding-top: 100px
+
+.figureWhite
+  position: absolute
+  bottom: 0
+  right: 0
+
+.swiper-slide-active
+  filter: none
+  opacity: 1
+
+.swiper-wrapper
+  display: flex
+  align-items: center
+  transition-timing-function: ease
+
+.slideBg1
+  background-image: url("../img/slide-1.png")
+  background-size: cover
+.slideBg2
+  background-image: url("../img/slide-2.png")
+  background-size: cover
+.slideBg3
+  background-image: url("../img/slide-3.png")
+  background-size: cover
+.carousel_block
+  font-family: "Roboto Slab", serif
+  background: #F7F6F9
+.titleSlide
+  font-size: 48px
+  color: white
+  background: #D9262D
+  border-radius: 10px
+  display: inline-block
+  padding: 0 25px
+  position: relative
+  font-weight: 500
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+
+
+.littleTitle
+  white-space: nowrap
+  position: absolute
+  font-size: 48px
+  font-weight: 500
+  bottom: -65px
+  left: 119px
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+
+.secondLittleTitle
+  font-size: 48px
+  font-weight: 500
+  bottom: -112px
+  right: -321px
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+  position: absolute
+
+
+
+.subtitleSlide
+  color: white
+  margin-top: 140px
+  width: 293px
+
+.subtitleSlideV2
+  color: white
+  margin-top: 170px
+  width: 293px
+
+.btnSlide
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  margin-top: 105px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 500
+  width: 138px
+  height: 42px
+  cursor: pointer
+
+.btnSlideNoMargin
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 500
+  width: 138px
+  height: 42px
+  cursor: pointer
+  margin-top: 70px
+  align-self: flex-end
+
+
+.btnKnowAbout
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 500
+  width: 138px
+  height: 42px
+  cursor: pointer
+  margin-top: 120px
+  align-self: flex-end
+
+.ourAdvantages
+  padding-top: 100px
+  background-image: url("../img/backgroundSquares.png")
+
+.titleSection
+  font-size: 40px
+  position: relative
+  font-weight: 600
+  right: -20px
+  color: #562C3E
+  font-family: "Roboto Slab", sans-serif
+
+
+.polygonRed
+  position: relative
+  top: -2px
+  right: -20px
+
+.imgS1Elem
+  margin: 0 auto
+
+.elemsS1
+  display: flex
+  justify-content: space-evenly
+
+.elemS1
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 321px
+  margin-top: 140px
+  img
+    width: 115px
+
+.titleElemS1
+  color: rgba(86, 44, 62, 1)
+  background: rgba(255, 200, 204, 1)
+  font-family: "Roboto Slab", serif
+  font-weight: bold
+  font-size: 20px
+  margin-top: 52px
+  height: 36px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+
+
+.subTitleElemS1
+  width: 287px
+  padding: 20px 30px 39px 30px
+  font-weight: 400
+  color: white
+  margin: 17px auto 0
+  border-radius: 10px
+  background: linear-gradient(180deg, rgba(166, 145, 154, 1) 0%, rgba(86, 44, 62, 1) 100%)
+  height: 173px
+
+.squareMarron
+  position: relative
+  width: 528px
+  height: 494px
+  background: #562C3E
+  border-radius: 10px
+  img
+    position: absolute
+    bottom: 0
+    left: -33px
+
+.supply
+  padding-top: 275px
+  background-image: url("../img/backgroundSquares.png")
+
+.gradientBlock
+  padding-top: 53px
+  width: 779px
+  height: 380px
+  padding-right: 131px
+  background-image: url("../img/gradientBgSupply.png")
+  margin-top: 70px
+.titleSupp
+  font-size: 32px
+  font-family: "Roboto Slab", serif
+  font-weight: 500
+  color: #562C3E
+  text-align: center
+
+.flexSupply
+  display: flex
+
+.supplySpanAfter
+  color: white
+  position: relative
+
+  &:after
+    content: ""
+    color: white
+    position: absolute
+    top: -14px
+    left: -18px
+    background: #D9262D
+    border-radius: 10px
+    height: 69px
+    width: 186px
+    z-index: -1
+
+.oneBox
+  padding-left: 240px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.topTextGradient
+  color: #562C3E
+  width: 436px
+
+.listInGradient
+  width: 436px
+  margin-top: 23px
+  li
+    margin-bottom: 20px
+    font-weight: 500
+    color: #562C3E
+
+.listInGradient li::marker
+  color: #D9262D
+
+.capabilities
+  padding-top: 150px
+  position: relative
+  background-image: url("../img/backgroundSquares.png")
+
+
+
+.services
+  display: flex
+  gap: 20px
+
+.service-card
+  position: relative
+  width: 300px
+  height: 400px
+  overflow: hidden
+  background-color: #f5f5f5
+  border-radius: 8px
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  transition: transform 0.3s
+
+.service-card:hover .card-image img
+  transform: translateY(-10%)
+
+.card-content
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: 100%
+  background: white
+  transition: transform 0.3s
+
+.card-image
+  height: 60%
+  overflow: hidden
+  transition: transform 0.3s
+
+.card-image img
+  width: 100%
+  transition: transform 0.3s
+
+.card-text
+  padding: 20px
+  height: 40%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.card-text h3
+  margin: 0
+
+.card-text p
+  margin: 10px 0
+  color: #555
+
+.card-button
+  align-self: flex-end
+  padding: 10px 20px
+  background-color: #d9262d
+  color: white
+  border: none
+  border-radius: 4px
+  cursor: pointer
+  transition: background-color 0.3s
+
+.card-button:hover
+  background-color: #b02023
+
+.cababCards
+  margin-top: 320px
+  display: flex
+  justify-content: space-between
+  position: relative
+  bottom: -90px
+
+.cabaCard
+  width: 436px
+  position: relative
+  z-index: 6
+
+
+.firstPartGrey
+  background: #9C9C9C
+  height: 81px
+  width: 100%
+  border-radius: 10px 10px 0 0
+  position: relative
+
+
+.cabaCard:hover .abilityPicCards
+  top: -207px
+  transition: 0.5s
+
+
+.abilityPicCards
+  z-index: 1
+  position: absolute
+  top: -107px
+  left: 50%
+  transform: translateX(-50%)
+  transition: 0.5s
+
+.secondPartWhite
+  z-index: 2
+  height: 140px
+  background: white
+  width: 100%
+  border-radius: 0 0 10px 10px
+  position: relative
+  padding: 20px
+  display: flex
+  justify-content: space-between
+
+.textOnGrey
+  height: 126px
+  position: relative
+  z-index: 2
+  margin-left: 48px
+  font-size: 32px
+  color: white
+  font-weight: 500
+  line-height: 42px
+  font-family: "Roboto Slab", serif
+  top: -50px
+  display: flex
+  align-items: flex-end
+.secondPartWhite
+  display: flex
+
+.descriptionWhitePart
+  width: 245px
+
+.partWhiteBtn
+  width: 85px
+  height: 73px
+  background: rgba(217, 38, 45, 1)
+  border: none
+  border-radius: 10px
+  cursor: pointer
+
+.knowAbout
+  height: 885px
+  background: url("../img/knowAbout.png")
+  background-size: cover
+
+.backgroundSquares
+  background-image: url("../img/backgroundSquares.png")
+  background-position: top
+  position: relative
+  z-index: -5
+
+.greyBlockForCapa
+  height: 250px
+  width: 100%
+  background: #E0DEE4
+
+.titleAbout
+  color: white
+  font-family: "Roboto Slab", serif
+  font-size: 32px
+  position: relative
+  z-index: 2
+  line-height: 63px
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+
+
+.redBg
+  background: #D9262D
+  padding: 10px 7px 10px 18px
+  border-radius: 10px
+
+.knowAbout
+  padding-top: 116px
+
+.symbolCapa
+  position: absolute
+  left: 94px
+  top: -60px
+  z-index: -1
+
+.infoKnowAbout
+  border-top: 1px white dashed
+  padding-top: 29px
+  margin-top: 140px
+  color: white
+  width: 206px
+  font-weight: 500
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+  line-height: 19px
+
+.marronBgPadding
+  color: white
+  background: #562C3E
+  padding: 10px 10px 10px 20px
+  border-radius: 10px
+
+
+.ourProjects
+  padding-top: 150px
+
+.carouselSecond
+  margin-top: 100px
+
+.slideBg1V2,.slideBg2V2,.slideBg3V2
+  background-image: url("../img/slide-1.png")
+  background-size: cover
