@@ -90,6 +90,7 @@ header
 .swiper-container2
   margin-top: 100px
   overflow: hidden
+  position: relative
 
 .swiper-slideV1
   position: relative
@@ -125,6 +126,8 @@ header
   display: flex
   align-items: center
   transition-timing-function: ease
+  position: relative
+  padding-bottom: 100px
 
 .slideBg1
   background-image: url("../img/slide-1.png")
@@ -565,10 +568,18 @@ header
 .carouselSecond
   margin-top: 100px
 
-.slideBg1V2,.slideBg2V2,.slideBg3V2
+.slideBg1V2
   background-image: url("../img/slider1p1.png")
   background-size: cover
 
+.slideBg2V2
+  background-image: url("../img/slider1p2.png")
+  background-size: cover
+
+
+.slideBg3V2
+  background-image: url("../img/slider1p3.png")
+  background-size: cover
 
 .anyQuestions
   width: 100%
@@ -607,6 +618,12 @@ header
   display: flex
   position: relative
   left: -90px
+
+.bigLatter
+  font-size: 96px
+
+.averageLatter
+  font-size: 40px
 
 .subQuestion
   width: 343px
@@ -790,7 +807,6 @@ footer
   text-decoration: none
 
 
-// Animation styles
 @keyframes slideUp
   0%
     opacity: 0
@@ -800,8 +816,79 @@ footer
     transform: translateY(0)
 
 .subtitleSlide, .btnSlide
-  opacity: 0 // Initially hidden
-  animation: none // Initially no animation
+  opacity: 0
+  animation: none
 
 .swiper-slide-active .subtitleSlide, .swiper-slide-active .btnSlide
-  animation: slideUp 0.5s ease forwards // Apply the animation when the slide is active
+  animation: slideUp 0.5s ease forwards
+
+
+.ourBtnsSecondSlide
+  position: absolute
+  right: 33% !important
+  top: 50% !important
+  background: white
+  height: 71px !important
+  border-radius: 5px
+  width: 29px !important
+  background-image: url("../img/btnDirrection.png")
+  background-size: 8px 18px
+  background-repeat: no-repeat
+  background-position: center
+  &:after
+    display: none
+
+.ourBtnsSecondSlidePrev
+  position: absolute
+  top: 50% !important
+  left: 33% !important
+  z-index: 20
+  background: white
+  height: 71px !important
+  border-radius: 5px
+  width: 29px !important
+  background-image: url("../img/btnDirrection.png")
+  background-size: 8px 18px
+  background-repeat: no-repeat
+  background-position: center
+  transform: rotateZ(180deg)
+  &:after
+    display: none
+
+.rightBottomCorner
+  position: absolute
+  bottom: 0
+  right: -2px
+
+.dateInCorner
+  position: absolute
+  bottom: 0
+  right: 0
+  padding-right: 40px
+  padding-bottom: 11px
+
+.topTitleCarousel
+  color: white
+  background: #562C3E
+  font-size: 24px
+  font-family: "Roboto Slab", serif
+  display: inline-block
+  position: absolute
+  top: 14px
+  left: 14px
+  border-radius: 5px
+  padding: 7px 20px
+  font-weight: 500
+
+
+.descPart
+  display: flex
+
+.descriptionSwipe2
+  position: absolute
+  bottom: -32px
+  left: 0
+
+.leftDesc
+  width: 237px
+  border-bottom: 1px dashed #562C3E

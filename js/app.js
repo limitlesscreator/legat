@@ -48,13 +48,17 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     initialSlide: 1, // Start from the second slide to show partial slides on both sides
     autoplay: {
-      delay: 3000, // Time in ms between each slide transition
+      delay: 110000, // Time in ms between each slide transition
       disableOnInteraction: false, // Continue autoplay after user interactions
     },
     breakpoints: {
       1024: {
         slidesPerView: 2.7, // Adjust this value based on your design
       },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 
