@@ -14,6 +14,31 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1.41, // Adjust this value based on your design
       },
     },
+    on: {
+      slideChangeTransitionEnd: function () {
+        var activeSlide = document.querySelector('.swiper-slide-active');
+        var subtitle = activeSlide.querySelector('.subtitleSlide');
+        var button = activeSlide.querySelector('.btnSlide');
+
+        // Remove animation classes from all slides
+        document.querySelectorAll('.subtitleSlide').forEach(function (el) {
+          el.style.animation = 'none';
+          el.style.opacity = '0';
+        });
+        document.querySelectorAll('.btnSlide').forEach(function (el) {
+          el.style.animation = 'none';
+          el.style.opacity = '0';
+        });
+
+        // Add animation classes to the active slide's elements if they exist
+        if (subtitle) {
+          subtitle.style.animation = 'slideUp 0.5s ease forwards';
+        }
+        if (button) {
+          button.style.animation = 'slideUp 0.5s ease forwards';
+        }
+      }
+    }
   });
 
   var swiper2 = new Swiper('.swiper-container2', {

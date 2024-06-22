@@ -695,10 +695,33 @@ footer
 
 .secondPartFooter
   width: 434px
+  position: relative
+
+.leftStick
+  background: #896C78
+  width: 1px
+  height: 142px
+  position: absolute
+  left: 0
+  top: 90px
+
+.rightStick
+  background: #896C78
+  width: 1px
+  height: 142px
+  position: absolute
+  right: 0
+  top: 90px
 
 .logoFooter
   margin: 0 auto
   display: block
+  width: 220px
+  transition: 0.5s
+  cursor: pointer
+  &:hover
+    width: 234px
+    transition: 0.5s
 
 .servicesFooter
   margin-top: 30px
@@ -764,3 +787,20 @@ footer
   margin-left: 95px
   color: #562C3E
   text-decoration: none
+
+
+// Animation styles
+@keyframes slideUp
+  0%
+    opacity: 0
+    transform: translateY(20px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+.subtitleSlide, .btnSlide
+  opacity: 0 // Initially hidden
+  animation: none // Initially no animation
+
+.swiper-slide-active .subtitleSlide, .swiper-slide-active .btnSlide
+  animation: slideUp 0.5s ease forwards // Apply the animation when the slide is active
