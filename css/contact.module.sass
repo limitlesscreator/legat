@@ -37,6 +37,7 @@ body
   width: 557px
   height: 181px
   margin-bottom: 52px
+  position: relative
 
 .flexMap
   margin-top: 114px
@@ -59,7 +60,7 @@ body
 .lineUnder
   width: 227px
   height: 1px
-  background: #896C78
+  background: #CDC0C6
   margin-top: 24px
 
 .titleAdress
@@ -97,3 +98,19 @@ body
 
 .underMapDescription
   margin-top: 80px
+
+.bottomRightStick
+  position: absolute
+  bottom: 30px
+  right: 20px
+  width: 457px
+  height: 1px
+  background: #CDC0C6
+
+.titleMain
+  opacity: 0
+  transform: translateX(-100%)
+  transition: opacity 0.5s ease, transform 0.5s ease
+  &.slide-in
+    opacity: 1
+    transform: translateX(0)

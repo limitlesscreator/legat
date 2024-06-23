@@ -100,6 +100,11 @@ document.querySelectorAll('.titleSection').forEach(section => {
 });
 
 
+document.querySelectorAll('.titleMain').forEach(section => {
+  observer.observe(section);
+});
+
+
 //animation :show images one by one imgS1Elem
 document.addEventListener("DOMContentLoaded", function() {
   const imgElems = document.querySelectorAll('.imgS1Elem');
