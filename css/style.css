@@ -166,20 +166,7 @@ body {
   align-self: flex-end;
 }
 
-.btnKnowAbout {
-  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  background: #D9262D;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-family: "Exo 2", sans-serif;
-  font-weight: 500;
-  width: 138px;
-  height: 42px;
-  cursor: pointer;
-  align-self: flex-end;
-  margin-top: 25px;
-}
+
 
 .btnSendForm {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -588,50 +575,12 @@ body {
   background-size: cover;
 }
 
-.anyQuestions {
-  width: 100%;
-  height: 660px;
-  background: #E0DEE4;
-  position: relative;
-}
 
-.containerRelative {
-  padding-top: 120px;
-  height: 660px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
-.womanQuestion {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 4;
-}
 
-.infoBlockQuestion {
-  width: 1015px;
-  height: 520px;
-}
 
-.questonsText {
-  background: #D9262D;
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: 48px;
-  color: white;
-  font-family: "Roboto Slab", serif;
-  padding: 49px 9px 20px 20px;
-  z-index: -1;
-}
 
-.flexTextQuestions {
-  display: flex;
-  position: relative;
-  left: -90px;
-}
+
 
 .bigLatter {
   font-size: 96px;
@@ -641,91 +590,18 @@ body {
   font-size: 40px;
 }
 
-.subQuestion {
-  width: 343px;
-  margin-top: 70px;
-  font-size: 15px;
-  margin-left: 40px;
-}
-
-.titleQuestion {
-  font-size: 48px;
-}
 
 
 
-.oneLetterQueston {
-  font-size: 96px;
-}
 
-.formFlex {
-  display: flex;
-  padding-left: 100px;
-  margin-top: 67px;
-}
 
-.littleInputForm {
-  margin-bottom: 23px;
-  width: 206px;
-  height: 48px;
-  background: white;
-  border-radius: 5px;
-  padding-left: 24px;
-  font-size: 15px;
-  display: block;
-  border: none;
-  font-family: "Exo 2", sans-serif;
-}
 
-.bigInputForm {
-  width: 512px;
-  height: 192px;
-  margin-left: 24px;
-  background: white;
-  border-radius: 5px;
-  padding-top: 15px;
-  padding-left: 14px;
-  display: flex;
-  font-size: 15px;
-  border: none;
-  font-family: "Exo 2", sans-serif;
-  resize: none;
-}
 
-.file-upload {
-  margin-top: 11px;
-  margin-left: 24px;
-}
 
-.file-upload {
-  position: relative;
-  display: inline-block;
-  font-size: 15px;
-  color: #562C3E;
-}
 
-.file-upload input[type=file] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer;
-}
 
-.file-upload label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
 
-.file-upload img {
-  margin-right: 8px;
-}
 
-.flexSpaceBeetween {
-  justify-content: space-between;
-  display: flex;
-}
 
 
 
