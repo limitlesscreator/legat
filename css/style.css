@@ -16,80 +16,10 @@ body {
   background: #ffffff;
 }
 
-header {
-  background: white;
-  z-index: 100;
-  height: 72px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-}
-header .container {
-  display: flex;
-  align-items: center;
-}
 
-.links {
-  display: flex;
-  width: 604px;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 72px;
-  position: relative;
-}
-.links a {
-  color: #562C3E;
-  text-decoration: none;
-  font-size: 15px;
-}
-.links:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  height: 30px;
-  background: #EDEDED;
-  width: 2px;
-  transform: translateY(-50%);
-}
-.links:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 30px;
-  background: #EDEDED;
-  width: 2px;
-  transform: translateY(-50%);
-}
 
-.contactUs {
-  margin-left: auto;
-  display: flex;
-}
-.contactUs div {
-  align-items: center;
-  display: flex;
-  color: #562C3E;
-  font-weight: 500;
-}
 
-.logo {
-  display: flex;
-  margin-right: 76px;
-}
 
-.mrLeftMobile {
-  margin-left: 27px;
-}
-
-.contactUs img {
-  margin-right: 13px;
-}
 
 .swiper-container {
   width: 100%;
@@ -722,6 +652,8 @@ header .container {
   font-size: 48px;
 }
 
+
+
 .oneLetterQueston {
   font-size: 96px;
 }
@@ -795,135 +727,7 @@ header .container {
   display: flex;
 }
 
-footer {
-  height: 456px;
-  background: #562C3E;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  font-size: 15px;
-}
 
-.flexContainer {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
-.secondPartFooter {
-  width: 434px;
-  position: relative;
-}
-
-.leftStick {
-  background: #896C78;
-  width: 1px;
-  height: 142px;
-  position: absolute;
-  left: 0;
-  top: 90px;
-}
-
-.rightStick {
-  background: #896C78;
-  width: 1px;
-  height: 142px;
-  position: absolute;
-  right: 0;
-  top: 90px;
-}
-
-.logoFooter {
-  margin: 0 auto;
-  display: block;
-  width: 220px;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.logoFooter:hover {
-  width: 234px;
-  transition: 0.5s;
-}
-
-.servicesFooter {
-  margin-top: 30px;
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-
-.ulFooter {
-  margin-top: 21px;
-  position: relative;
-  left: 18px;
-}
-.ulFooter li {
-  margin-top: 10px;
-  color: #CDC0C6;
-}
-
-.generalLinksFooter {
-  margin-top: 20px;
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-
-.adress {
-  text-align: center;
-  margin-top: 67px;
-}
-.adress img {
-  margin-right: 10px;
-  position: relative;
-  bottom: -5px;
-}
-
-.connectWithUs {
-  margin-bottom: 20px;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  color: white;
-  text-decoration: none;
-}
-.social img {
-  margin-right: 24px;
-}
-
-.lastFooter {
-  background: #E0DEE4;
-  height: 30px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.lastFooter div {
-  width: 33%;
-}
-
-.copyRight {
-  text-align: center;
-  color: #562C3E;
-}
-
-.firestPartFooter, .secondPartFooter, .thirdPartFooter {
-  width: 33.3%;
-}
-
-.thirdPartFooter {
-  padding-left: 170px;
-}
-
-.politic {
-  text-align: right;
-  margin-left: 95px;
-  color: #562C3E;
-  text-decoration: none;
-}
 
 @keyframes slideUp {
   0% {
@@ -945,6 +749,7 @@ footer {
 }
 
 .ourBtnsSecondSlide {
+  transition: 0.5s;
   position: absolute;
   right: 33% !important;
   top: 50% !important;
@@ -962,6 +767,9 @@ footer {
 }
 
 .ourBtnsSecondSlidePrev {
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: 0.5s;
   position: absolute;
   top: 50% !important;
   left: 33% !important;
@@ -1023,6 +831,42 @@ footer {
 .leftDesc {
   width: 237px;
   border-bottom: 1px dashed #562C3E;
+}
+
+.titleSection {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.titleSection.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel_block {
+  position: relative;
+}
+.carousel_block .ourBtnsSecondSlide,
+.carousel_block .ourBtnsSecondSlidePrev {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.carousel_block:hover .ourBtnsSecondSlide,
+.carousel_block:hover .ourBtnsSecondSlidePrev {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imgS1Elem {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.imgS1Elem.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */

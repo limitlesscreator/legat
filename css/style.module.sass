@@ -1,4 +1,5 @@
 //font-family: "Roboto Slab", serif
+//index page
 
 *
   margin: 0
@@ -824,6 +825,7 @@ footer
 
 
 .ourBtnsSecondSlide
+  transition: 0.5s
   position: absolute
   right: 33% !important
   top: 50% !important
@@ -839,6 +841,9 @@ footer
     display: none
 
 .ourBtnsSecondSlidePrev
+  visibility: hidden
+  transition: opacity 0.3s ease, visibility 0.3s ease
+  transition: 0.5s
   position: absolute
   top: 50% !important
   left: 33% !important
@@ -894,3 +899,43 @@ footer
 .leftDesc
   width: 237px
   border-bottom: 1px dashed #562C3E
+
+
+.titleSection
+  opacity: 0
+  transform: translateX(-100%)
+  transition: opacity 0.5s ease, transform 0.5s ease
+
+  &.slide-in
+    opacity: 1
+    transform: translateX(0)
+
+//test
+
+
+.carousel_block
+  position: relative
+
+  .ourBtnsSecondSlide,
+  .ourBtnsSecondSlidePrev
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.3s ease, visibility 0.3s ease
+
+  &:hover
+    .ourBtnsSecondSlide,
+    .ourBtnsSecondSlidePrev
+      opacity: 1
+      visibility: visible
+
+
+.imgS1Elem
+  opacity: 0
+  transform: translateY(100px)
+  transition: opacity 0.5s ease, transform 0.5s ease
+
+.imgS1Elem.in-view
+  opacity: 1
+  transform: translateY(0)
+
+//index page
