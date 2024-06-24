@@ -54,18 +54,22 @@ body {
   font-family: "Roboto Slab", serif;
   background: #896C78;
   border-radius: 10px;
-  width: 243px;
   height: 46px;
-  display: flex;
+  display: inline-flex;
+  padding: 0 17px;
   justify-content: center;
   align-items: center;
   font-weight: 500;
   font-size: 20px;
+  position: relative;
   margin-top: 18px;
 }
 
 .lineUnder {
-  width: 227px;
+  width: 100%;
+  position: absolute;
+  bottom: -34px;
+  left: 0;
   height: 1px;
   background: #CDC0C6;
   margin-top: 24px;
@@ -95,6 +99,18 @@ body {
 
 .additionalWidth {
   width: 100px !important;
+}
+
+.contactImg {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin: 0 auto;
+}
+
+.contactImg.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #map1, #map2 {

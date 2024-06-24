@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       spaceBetween: 37, // Space between slides
       centeredSlides: true,
       loop: true,
+      speed: 1000,
       initialSlide: 1, // Start from the second slide to show partial slides on both sides
       autoplay: {
         delay: 3000, // Time in ms between each slide transition
@@ -107,7 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(section);
   });
 
-  // Animation: show images one by one imgS1Elem
+  document.querySelectorAll('.titleMain').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Animation: show images one by one imgS1Elem on Main Page
   const imgElems = document.querySelectorAll('.imgS1Elem');
   if (imgElems.length) {
     const observerImg = new IntersectionObserver((entries) => {
@@ -124,6 +129,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     imgElems.forEach(img => {
+      observerImg.observe(img);
+    });
+  }
+  // Animation: show images one by one imgS1Elem on contactsPage
+  const imgElemsContact = document.querySelectorAll('.contactImg');
+  if (imgElemsContact.length) {
+    const observerImg = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('in-view');
+          }, index * 300); // Delay each image by 0.3s
+          observerImg.unobserve(entry.target); // Stop observing once it has become visible
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    imgElemsContact.forEach(img => {
       observerImg.observe(img);
     });
   }
@@ -159,5 +184,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     myMap2.geoObjects.add(placemark2);
+  }
+});
+
+
+
+
+
+// Custom select elem for ourProjects
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.location.pathname.endsWith('ourProjects.html')) {
+
+    // Place the code specific to ourProjects.html here
+    const customSelectContainer = document.querySelector('.custom-select-container');
+    const customSelectTrigger = customSelectContainer.querySelector('.custom-select-trigger');
+    const customOptions = customSelectContainer.querySelector('.custom-options');
+    const customOptionsList = customOptions.querySelectorAll('.custom-option');
+    const originalSelect = customSelectContainer.querySelector('.custom-select');
+
+    customSelectTrigger.addEventListener('click', () => {
+      customOptions.classList.toggle('active');
+    });
+
+    customOptionsList.forEach(option => {
+      option.addEventListener('click', () => {
+        customOptionsList.forEach(opt => {
+          opt.classList.remove('selected');
+        });
+        option.classList.add('selected');
+        customSelectTrigger.textContent = option.textContent;
+        originalSelect.value = option.getAttribute('data-value');
+        customOptions.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!customSelectContainer.contains(e.target)) {
+        customOptions.classList.remove('active');
+      }
+    });
   }
 });
