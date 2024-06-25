@@ -1,7 +1,6 @@
+//font-family: "Roboto Slab", serif
 body
   color: #562C3E
-  background: #F7F6F9
-
 
 *
   margin: 0
@@ -9,9 +8,9 @@ body
   box-sizing: border-box
 
 .bannerContact
-  background: url("../img/productionBgStart.png")
+  background: url("../img/contractsBg.png")
   background-size: cover
-  height: 415px
+  height: 352px
 
 .titleSlide
   margin-top: 80px
@@ -21,9 +20,6 @@ body
   position: relative
   font-weight: 600
   text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
-.productionBg
-  background: url("../img/productionBg.png")
-  padding-bottom: 175px
 
 .redBgTitile
   background: #D9262D
@@ -31,7 +27,6 @@ body
   border-radius: 10px
 
 .titleMain
-  margin-top: 20px
   color: white
   font-family: "Roboto Slab", serif
   background: #896C78
@@ -56,14 +51,16 @@ body
 
 .listElems
   margin-top: 28px
-  padding-bottom: 164px
+  padding-bottom: 114px
 
 .list
   display: flex
   flex-wrap: wrap
   row-gap: 89px
   justify-content: space-between
-  margin-top: 52px
+  margin-top: 150px
+
+
 .listNoMargin
   display: flex
   flex-wrap: wrap
@@ -164,7 +161,7 @@ body
 
 .imgContainer
   width: 100%
-  height: 270px
+  height: 177px
   position: relative
   overflow: hidden
   display: flex
@@ -209,6 +206,7 @@ body
   margin-left: 5px
 
 .descriptionSwipe2
+  color: #896C78
   margin-top: 30px
 
 
@@ -225,13 +223,7 @@ body
 .descriptionSwipe2 li::marker
   color: #D9262D
 
-.specialThirdRelative
-  position: relative
-  bottom: -43px
 
-.specialFirstRelative
-  position: relative
-  bottom: -10px
 
 .specialFour
   position: relative
@@ -245,8 +237,7 @@ body
   position: relative
   bottom: -27px
 
-.hoverIncrease
-  top: 30px !important
+
 
 .lineThrough
   width: 100%
@@ -274,24 +265,128 @@ body
   color: #562C3E
   font-weight: 600
 
-.elemProduction
-  width: 235px
+.lineTitle
+  margin: 0 20px
+  position: relative
+  bottom: -2px
 
-.listElemsProduction
-  display: flex
-  justify-content: space-evenly
-  margin-top: 150px
-
-.titleComponent
-  font-size: 20px
+.underRedTitle
+  color: #D9262D
+  font-size: 24px
   font-weight: 600
+  margin-top: 7px
+  margin-bottom: 17px
   font-family: "Roboto Slab", serif
-  margin-top: 20px
 
-.subTitleComponent
-  font-size: 18px
-  color: #896C78
-  margin-top: 18px
+.infoBlock
+  padding-top: 50px
+  background: url("../img/infoBlockBg.png")
+  padding-bottom: 103px
 
-.marginAdditional
-  margin-top: 29px
+.titleSection
+  margin-top: 270px
+  width: 576px
+  font-size: 32px
+  position: relative
+  font-weight: 600
+  right: -20px
+  color: #562C3E
+  font-family: "Roboto Slab", sans-serif
+  opacity: 0
+  transform: translateX(-100%)
+  transition: opacity 0.5s ease, transform 0.5s ease
+  &.slide-in
+    opacity: 1
+    transform: translateX(0)
+
+.marronBgPadding
+  color: white
+  background: #562C3E
+  padding: 10px 10px 10px 20px
+  border-radius: 10px
+
+.averageLatter
+  font-size: 40px
+
+.picRightSide
+  display: flex
+  justify-content: space-between
+
+.nineElems
+  margin-top: 33px
+  display: flex
+  justify-content: space-between
+  column-gap: 89px
+  row-gap: 76px
+  flex-wrap: wrap
+  width: 86%
+  margin: 33px auto 0
+.flexImg
+  display: flex
+  align-items: flex-end
+  justify-content: center
+
+
+
+.numberInFlex
+  font-size: 64px
+  position: relative
+  bottom: -10px
+
+.elemContr
+  width: 240px
+  position: relative
+
+.descriptionCountr
+  font-weight: 600
+  margin-top: 10px
+  text-align: center
+
+.contrSnake
+  position: absolute
+  top: 71px
+  right: -221px
+
+.connectionLine
+  position: absolute
+  bottom: -64px
+  left: 147px
+  width: 921px
+
+.connectionLineSecond
+  position: absolute
+  bottom: -86px
+  left: 127px
+  width: 948px
+
+.additionMargin
+  margin-top: 30px
+
+
+.ourProjectsInfo
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin-top: 160px
+  background: none
+  color: rgba(86, 44, 62, 1)
+  font-size: 16px
+
+.btnContract
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 600
+  width: 138px
+  height: 42px
+  cursor: pointer
+  align-self: flex-end
+
+.ourPortfolio
+  margin-right: 50px
+  font-weight: 600
+.hoverIncrease:hover
+  transform: scale(120%)
