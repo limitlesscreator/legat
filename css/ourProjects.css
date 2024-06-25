@@ -14,7 +14,7 @@ body {
   font-size: 48px;
   color: white;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -34,7 +34,7 @@ body {
   padding: 0 17px;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   position: relative;
   opacity: 0;
@@ -80,7 +80,7 @@ body {
   color: #562C3E;
   margin-top: 100px;
   padding-left: 20px;
-  font-weight: 500;
+  font-weight: 600;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -92,7 +92,7 @@ body {
 .selection option {
   background-color: white !important;
   color: #562C3E !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   padding-left: 20px !important;
   border: none !important;
   cursor: pointer !important;
@@ -121,7 +121,7 @@ body {
   border: 1px solid #ccc;
   padding-left: 20px;
   padding-right: 30px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -146,7 +146,7 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   color: #562C3E;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .custom-option:hover {
@@ -198,12 +198,12 @@ body {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .titleElem {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 12px;
   font-family: "Roboto Slab", serif;
 }

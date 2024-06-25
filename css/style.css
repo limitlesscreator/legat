@@ -97,7 +97,7 @@ body {
   display: inline-block;
   padding: 0 25px;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -105,7 +105,7 @@ body {
   white-space: nowrap;
   position: absolute;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 600;
   bottom: -65px;
   left: 119px;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -113,7 +113,7 @@ body {
 
 .secondLittleTitle {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 600;
   bottom: -112px;
   right: -321px;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -140,7 +140,7 @@ body {
   margin-top: 105px;
   color: white;
   font-family: "Exo 2", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   width: 138px;
   height: 42px;
   cursor: pointer;
@@ -153,7 +153,7 @@ body {
   border-radius: 10px;
   color: white;
   font-family: "Exo 2", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   width: 138px;
   height: 42px;
   cursor: pointer;
@@ -168,7 +168,7 @@ body {
   border-radius: 10px;
   color: white;
   font-family: "Exo 2", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   width: 138px;
   height: 42px;
   cursor: pointer;
@@ -271,7 +271,7 @@ body {
 .titleSupp {
   font-size: 32px;
   font-family: "Roboto Slab", serif;
-  font-weight: 500;
+  font-weight: 600;
   color: #562C3E;
   text-align: center;
 }
@@ -315,7 +315,7 @@ body {
 }
 .listInGradient li {
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #562C3E;
 }
 
@@ -456,7 +456,7 @@ body {
   margin-left: 48px;
   font-size: 32px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 42px;
   font-family: "Roboto Slab", serif;
   top: -50px;
@@ -533,7 +533,7 @@ body {
   margin-top: 140px;
   color: white;
   width: 206px;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   line-height: 19px;
 }
@@ -660,7 +660,7 @@ body {
   left: 14px;
   border-radius: 5px;
   padding: 7px 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .descPart {

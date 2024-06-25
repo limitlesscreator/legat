@@ -225,3 +225,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+// active links underheader, highlite text when current url
+document.addEventListener('DOMContentLoaded', function () {
+  const currentPath = window.location.pathname;
+
+  const links = document.querySelectorAll('.underHeader a');
+
+  links.forEach(link => {
+    if (link.getAttribute('href').endsWith(currentPath)) {
+      link.classList.add('active');
+    }
+  });
+})
