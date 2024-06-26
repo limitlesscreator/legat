@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //dropdown code on printMetalPAge
 document.addEventListener('DOMContentLoaded', function() {
-  if (window.location.pathname.endsWith('printMetal.html')) {
+  if (window.location.pathname.endsWith('printmetal.html')) {
 
     const dropdownItems = document.querySelectorAll('.dropdownItem');
 
