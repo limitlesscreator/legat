@@ -1,0 +1,535 @@
+//font-family: "Roboto Slab", serif
+
+body
+  color: #562C3E
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.bannerContact
+  background: url("../img/bgMetal.png")
+  background-size: cover
+  height: 366px
+
+.titleSlide
+  margin-top: 80px
+  padding-left: 170px
+  display: inline-block
+  font-size: 48px
+  position: relative
+  font-weight: 600
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
+  color: #562C3E
+
+.componentImg
+  position: absolute
+  left: 0
+  top: 5px
+
+
+.redBgTitile
+  color: white
+  background: #562C3E
+  padding: 32px 4px 5px 10px
+  border-radius: 10px
+
+.titleMain
+  color: white
+  font-family: "Roboto Slab", serif
+  background: #896C78
+  border-radius: 10px
+  height: 46px
+  display: inline-flex
+  padding: 0 17px
+  justify-content: center
+  align-items: center
+  font-weight: 600
+  font-size: 20px
+  position: relative
+  opacity: 0
+  transform: translateX(-100%)
+  transition: opacity 0.5s ease, transform 0.5s ease
+  &.slide-in
+    opacity: 1
+    transform: translateX(0)
+
+.bigLatter
+  font-size: 96px
+
+.listElems
+  margin-top: 28px
+  padding-bottom: 114px
+
+.list
+  display: flex
+  flex-wrap: wrap
+  row-gap: 89px
+  justify-content: space-between
+  margin-top: 150px
+
+
+.listNoMargin
+  display: flex
+  flex-wrap: wrap
+  row-gap: 89px
+  justify-content: space-between
+.lineUnder
+  width: 100%
+  position: absolute
+  bottom: -34px
+  left: 0
+  height: 1px
+  background: #CDC0C6
+  margin-top: 24px
+  z-index: 5
+
+
+.selection
+  width: 309px
+  height: 48px
+  border-radius: 10px
+  color: #562C3E
+  margin-top: 100px
+  padding-left: 20px
+  font-weight: 600
+  appearance: none // Remove default arrow
+  -webkit-appearance: none // Remove default arrow in Safari
+  -moz-appearance: none // Remove default arrow in Firefox
+  background: url('../img/redSelection.svg') no-repeat right 25px center
+  background-size: 9px // Adjust size of custom arrow
+  padding-right: 30px // Space for the custom arrow
+  border: 1px solid #ccc
+  option
+    background-color: white !important
+    color: #562C3E !important
+    font-weight: 600 !important
+    padding-left: 20px !important
+    border: none !important
+    cursor: pointer !important
+
+
+.custom-select-container
+  position: relative
+  width: 309px
+  margin-top: 102px
+
+
+.custom-select
+  display: none // Hide the default select element
+
+.custom-select-trigger
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  height: 48px
+  border-radius: 10px
+  color: #562C3E
+  background: white url('../img/redSelection.svg') no-repeat right 10px center
+  background-size: 9px
+  border: 1px solid #ccc
+  padding-left: 20px
+  padding-right: 30px
+  font-weight: 600
+  cursor: pointer
+
+.custom-options
+  position: absolute
+  top: 100%
+  left: 0
+  right: 0
+  background: white
+  border: 1px solid #ccc
+  border-radius: 0 0 10px 10px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  z-index: 999
+  display: none // Hide the options by default
+
+.custom-options.active
+  display: block
+
+.custom-option
+  padding: 10px 20px
+  cursor: pointer
+  color: #562C3E
+  font-weight: 600
+
+.custom-option:hover
+  background-color: #f1f1f1
+
+.custom-option.selected
+  background-color: #d9262d
+  color: white
+
+
+
+.elementList
+  width: 436px
+
+.imgContainer
+  width: 100%
+  height: 177px
+  position: relative
+  overflow: hidden
+  display: flex
+  align-items: baseline
+
+.angleProject
+  position: absolute
+  bottom: -2px
+  right: 0
+
+.hoverIncrease
+  transition: 0.5s
+  width: 436px
+  position: relative
+  left: 0px
+  top: 0px
+
+
+.dateCorner
+  position: absolute
+  bottom: 20px
+  right: 20px
+  font-weight: 600
+
+.titleElem
+  font-size: 22px
+  font-weight: 600
+  font-family: "Roboto Slab", serif
+  background: #E0DEE4
+  padding: 12px 20px
+  border-radius: 10px
+.descPart
+  display: flex
+  margin-bottom: 9px
+
+.leftDesc
+  width: 190px
+  font-size: 15px
+  border-bottom: 1px dashed #CDC0C6
+
+.rightDesc
+  margin-left: 5px
+
+.descriptionSwipe2
+  color: #896C78
+  margin-top: 30px
+
+
+
+
+.thirdTitleSlide
+  margin-left: 207px
+
+.descriptionSwipe2 li
+  margin-bottom: 15px
+  margin-left: 30px
+
+.descriptionSwipe2 li::marker
+  color: #D9262D
+
+
+
+.specialFour
+  position: relative
+  bottom: -51px
+
+.specialFive
+  position: relative
+  bottom: -17px
+
+.specialSix
+  position: relative
+  bottom: -27px
+
+
+
+.lineThrough
+  width: 100%
+  height: 1px
+  background: #CDC0C6
+  margin-top: 50px
+  margin-bottom: -25px
+
+
+.underHeader
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #E0DEE4
+  font-size: 15px
+  color: #896C78
+  text-decoration: none
+  height: 36px
+  a
+    color: #896C78
+    margin: 0 30px
+    text-decoration: none
+
+.underHeader a.active
+  color: #562C3E
+  font-weight: 600
+
+.lineTitle
+  margin: 0 20px
+  position: relative
+  bottom: -2px
+
+.underRedTitle
+  color: #D9262D
+  font-size: 24px
+  font-weight: 600
+  margin-top: 7px
+  margin-bottom: 17px
+  font-family: "Roboto Slab", serif
+
+.infoBlock
+  padding-top: 50px
+  background: url("../img/infoBlockBg.png")
+  padding-bottom: 103px
+
+.titleSection
+  margin-top: 270px
+  width: 576px
+  font-size: 32px
+  position: relative
+  font-weight: 600
+  right: -20px
+  color: #562C3E
+  font-family: "Roboto Slab", sans-serif
+  opacity: 0
+  transform: translateX(-100%)
+  transition: opacity 0.5s ease, transform 0.5s ease
+  &.slide-in
+    opacity: 1
+    transform: translateX(0)
+
+.marronBgPadding
+  color: white
+  background: #562C3E
+  padding: 10px 10px 10px 20px
+  border-radius: 10px
+
+.averageLatter
+  font-size: 40px
+
+.picRightSide
+  display: flex
+  justify-content: space-between
+
+.nineElems
+  margin-top: 33px
+  display: flex
+  justify-content: space-between
+  column-gap: 89px
+  row-gap: 76px
+  flex-wrap: wrap
+  width: 86%
+  margin: 33px auto 0
+.flexImg
+  display: flex
+  align-items: flex-end
+  justify-content: center
+
+
+
+.numberInFlex
+  font-size: 64px
+  position: relative
+  bottom: -10px
+
+.elemContr
+  width: 240px
+  position: relative
+
+.descriptionCountr
+  font-weight: 600
+  margin-top: 10px
+  text-align: center
+
+.contrSnake
+  position: absolute
+  top: 71px
+  right: -221px
+
+.connectionLine
+  position: absolute
+  bottom: -64px
+  left: 147px
+  width: 921px
+
+.connectionLineSecond
+  position: absolute
+  bottom: -86px
+  left: 127px
+  width: 948px
+
+.additionMargin
+  margin-top: 30px
+
+
+.ourProjectsInfo
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin-top: 160px
+  background: none
+  color: rgba(86, 44, 62, 1)
+  font-size: 16px
+
+.btnContract
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 600
+  width: 138px
+  height: 42px
+  cursor: pointer
+  align-self: flex-end
+
+.ourPortfolio
+  margin-right: 50px
+  font-weight: 600
+.hoverIncrease:hover
+  transform: scale(120%)
+
+
+//dropdown
+
+
+.dropdownContainer
+  margin-top: 47px
+
+  .dropdownItem
+    border-bottom: 1px solid #ccc
+    background: #E0DEE4
+    border-radius: 5px
+    margin-bottom: 11px
+    .dropdownHeader
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 10px
+      cursor: pointer
+      font-weight: 600
+      color: #562C3E
+      font-family: "Roboto Slab", serif
+
+      &:hover
+        background-color: #e0e0e0
+      .arrow
+        transition: transform 0.3s
+    .dropdownContent
+      max-height: 0
+      overflow: hidden
+      transition: max-height 0.3s ease-out
+      padding: 0 20px
+
+  .dropdownItem.active
+    .dropdownContent
+      max-height: 1000px // Adjust as needed
+
+
+.arrow
+  transform: rotate(180deg)
+
+.flexUl
+  display: flex
+  padding-top: 40px
+  padding-bottom: 20px
+  padding-left: 128px
+  ul
+    width: 320px
+    li
+      margin-bottom: 22px
+    li::marker
+      color: #D9262D
+
+
+.textInfoDropDown
+  padding-bottom: 30px
+  li
+    margin-left: 19px
+    width: 570px
+    font-weight: bold
+    color: #562C3E
+    margin-bottom: 25px
+  li::marker
+    color: #D9262D
+
+.textInfoDropDownThree
+  padding-top: 30px
+  padding-bottom: 30px
+  ul
+    margin-top: 37px
+    margin-left: 20px
+  li
+    list-style: decimal
+    margin-left: 19px
+    width: 774px
+    color: #562C3E
+    margin-bottom: 22px
+    padding-left: 20px
+  li::marker
+    color: #D9262D
+    font-weight: bold
+
+.section4
+  padding-top: 40px
+  padding-bottom: 40px
+  width: 1053px
+
+
+//table
+
+
+.technicalCapabilities
+  width: 100%
+  border-collapse: collapse
+  margin: 20px 0
+
+  th, td
+    border: 1px solid #ddd
+    padding: 8px
+    line-height: 30px
+  th
+    background-color: #D9262D
+    color: white
+    font-size: 18px
+    text-align: left
+
+  tr
+    background-color: #f2f2f2
+
+  tr:hover
+    background-color: #ddd
+
+  td
+    font-size: 16px
+    color: #562C3E
+
+  .leftColumn
+    width: 230px
+    font-weight: bold
+
+.titleTech
+  background: #D9262D
+  color: white
+  font-size: 20px
+  padding-left: 19px
+  height: 40px
+  display: flex
+  align-items: center
+
+table ul li
+  list-style: none
+
+.leftColumnV2
+  width: 45%
+  font-weight: bold

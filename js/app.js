@@ -239,3 +239,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 })
+
+
+//dropdown code on printMetalPAge
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.location.pathname.endsWith('printMetal.html')) {
+
+    const dropdownItems = document.querySelectorAll('.dropdownItem');
+
+    dropdownItems.forEach(item => {
+      const header = item.querySelector('.dropdownHeader');
+      header.addEventListener('click', () => {
+        const content = item.querySelector('.dropdownContent');
+        const arrow = item.querySelector('.arrow');
+
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+          content.style.maxHeight = null;
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          item.classList.add('active');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  }
+
+});
+
