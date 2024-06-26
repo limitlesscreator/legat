@@ -512,6 +512,14 @@ body {
   border-radius: 10px;
 }
 
+.redBgAddition {
+  color: white;
+  background: #D9262D;
+  padding: 10px 0px 10px 18px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
 .knowAbout {
   padding-top: 116px;
 }
@@ -561,21 +569,6 @@ body {
 
 .slideBg3V2 {
   background-image: url("../img/slider1p3.png");
-  background-size: cover;
-}
-
-.slideBg4V2 {
-  background-image: url("../img/ourProjectList4.png");
-  background-size: cover;
-}
-
-.slideBg5V2 {
-  background-image: url("../img/ourProjectList5.png");
-  background-size: cover;
-}
-
-.slideBg6V2 {
-  background-image: url("../img/ourProjectList6.png");
   background-size: cover;
 }
 
@@ -728,4 +721,172 @@ body {
   transform: translateY(0);
 }
 
-/*# sourceMappingURL=style.css.map */
+.checkedProvider {
+  position: relative;
+  top: -100px;
+}
+
+.aboutBg {
+  height: 960px;
+  background: url("../img/backgroundAbout.png");
+  background-size: cover;
+  background-position: 126px -115px;
+  background-repeat: no-repeat;
+}
+
+.aboutText {
+  width: 448px;
+  border-bottom: solid 1px #CDC0C6;
+  padding-top: 447px;
+  padding-bottom: 25px;
+  margin-left: 100px;
+}
+
+.flexUnder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.illustration {
+  margin-top: 100px;
+}
+
+.infoBlock {
+  background-image: linear-gradient(to right, #E0DEE4, white);
+  padding: 100px;
+  width: 667px;
+  border-radius: 10px;
+}
+
+.boldPartText {
+  font-weight: bold;
+}
+
+.underLinePartText {
+  margin-top: 30px;
+  border-bottom: #CDC0C6 solid 1px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.flySection {
+  background-image: linear-gradient(to right, #E0DEE4, white);
+  background-size: 500px;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.rightTitle {
+  color: #562C3E;
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  margin-left: 680px;
+  position: relative;
+}
+
+.forFly {
+  position: relative;
+}
+
+.fz40 {
+  font-size: 40px;
+}
+
+.plane {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.textInfoTruck {
+  height: 768px;
+  position: relative;
+}
+
+.truck {
+  position: absolute;
+  top: 90px;
+  right: -150px;
+  z-index: -1;
+}
+
+.textInfoFirstPart {
+  width: 278px;
+  padding-top: 280px;
+}
+
+.secondTextInfo {
+  width: 512px;
+  margin-top: 62px;
+  padding-bottom: 27px;
+  border-bottom: solid 1px #CDC0C6;
+}
+
+.thirtTextILnfo {
+  font-weight: 600;
+  width: 568px;
+  margin-top: 24px;
+}
+
+.infoDescription {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.redElem {
+  margin-top: 30px;
+  width: 399px;
+  color: white;
+  background: #D9262D;
+  padding: 23px 13px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-top: 35px solid #D9262D;
+}
+
+.underRed {
+  font-weight: bold;
+  margin-top: 50px;
+  width: 436px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CDC0C6;
+}
+
+.lastDescription {
+  margin-top: 32px;
+}
+
+.btnContract {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background: #D9262D;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  width: 138px;
+  height: 42px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.btnRightSide {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=about.css.map */
