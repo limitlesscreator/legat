@@ -159,26 +159,28 @@ document.addEventListener('DOMContentLoaded', function () {
   function init() {
     // Map 1
     var myMap1 = new ymaps.Map("map1", {
-      center: [55.731663, 37.655407], // Coordinates for the first address
+      center: [55.726923, 37.694235], // Coordinates for the first address
       zoom: 16,
       controls: ['zoomControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
     });
 
-    var placemark1 = new ymaps.Placemark([55.731663, 37.655407], {
+    var placemark1 = new ymaps.Placemark([55.726923, 37.694235], {
       hintContent: 'г. Москва, Скотопрогонная, 35 стр. 5',
       balloonContent: '<strong>г. Москва, Скотопрогонная, 35 стр. 5</strong><br>Пн-Вс 8:00-18:00'
     });
 
     myMap1.geoObjects.add(placemark1);
 
+
+
     // Map 2
     var myMap2 = new ymaps.Map("map2", {
-      center: [55.794007, 37.702875], // Coordinates for the second address
+      center: [55.786521, 37.722585], // Coordinates for the second address
       zoom: 16,
       controls: ['zoomControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
     });
 
-    var placemark2 = new ymaps.Placemark([55.794007, 37.702875], {
+    var placemark2 = new ymaps.Placemark([55.786521, 37.722585], {
       hintContent: 'Москва, ул. Ткацкая, 5 стр. 4',
       balloonContent: '<strong>Москва, ул. Ткацкая, 5 стр. 4</strong><br>Пн-Вс 9:00-21:00'
     });

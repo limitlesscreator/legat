@@ -182,7 +182,7 @@ body {
 }
 
 .titleSection {
-  font-size: 40px;
+  font-size: 32px;
   position: relative;
   font-weight: 600;
   right: -20px;
@@ -468,6 +468,21 @@ body {
   width: 245px;
 }
 
+.btnKnowMargin {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background: #D9262D;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  width: 138px;
+  height: 42px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 140px;
+}
+
 .partWhiteBtn {
   width: 85px;
   height: 73px;
@@ -475,6 +490,10 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+.partWhiteBtn img {
+  position: relative;
+  bottom: -5px;
 }
 
 .knowAbout {
@@ -694,7 +713,7 @@ body {
 .titleSection {
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 1s ease, transform 1s ease;
 }
 .titleSection.slide-in {
   opacity: 1;
@@ -726,6 +745,30 @@ body {
 .imgS1Elem.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+.ourProjectsInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 60px;
+  background: none;
+  color: rgb(86, 44, 62);
+  font-size: 16px;
+}
+
+.btnContract {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background: #D9262D;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  width: 138px;
+  height: 42px;
+  cursor: pointer;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

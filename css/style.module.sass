@@ -167,7 +167,7 @@ body
   background-image: url("../img/backgroundSquares.png")
 
 .titleSection
-  font-size: 40px
+  font-size: 32px
   position: relative
   font-weight: 600
   right: -20px
@@ -420,6 +420,20 @@ body
 .descriptionWhitePart
   width: 245px
 
+.btnKnowMargin
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 600
+  width: 138px
+  height: 42px
+  cursor: pointer
+  align-self: flex-end
+  margin-top: 140px
+
 .partWhiteBtn
   width: 85px
   height: 73px
@@ -427,6 +441,9 @@ body
   border: none
   border-radius: 10px
   cursor: pointer
+  img
+    position: relative
+    bottom: -5px
 
 .knowAbout
   height: 885px
@@ -625,7 +642,7 @@ body
 .titleSection
   opacity: 0
   transform: translateX(-100%)
-  transition: opacity 0.5s ease, transform 0.5s ease
+  transition: opacity 1.0s ease, transform 1.0s ease
   &.slide-in
     opacity: 1
     transform: translateX(0)
@@ -659,4 +676,24 @@ body
   opacity: 1
   transform: translateY(0)
 
-//index page
+.ourProjectsInfo
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin-top: 60px
+  background: none
+  color: rgba(86, 44, 62, 1)
+  font-size: 16px
+
+.btnContract
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25)
+  background: #D9262D
+  border: none
+  border-radius: 10px
+  color: white
+  font-family: "Exo 2", sans-serif
+  font-weight: 600
+  width: 138px
+  height: 42px
+  cursor: pointer
+  align-self: flex-end
