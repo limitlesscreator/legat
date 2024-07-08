@@ -2,74 +2,150 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize Swiper 1 if the container exists
   var swiperContainer1 = document.querySelector('.swiper-container');
   if (swiperContainer1) {
-    var swiper1 = new Swiper(swiperContainer1, {
-      slidesPerView: 1.41, // Show 1.41 slides to get the partial slide effect
-      spaceBetween: 37, // Space between slides
-      centeredSlides: true,
-      loop: true,
-      speed: 1000,
-      initialSlide: 1, // Start from the second slide to show partial slides on both sides
-      autoplay: {
-        delay: 3000, // Time in ms between each slide transition
-        disableOnInteraction: false, // Continue autoplay after user interactions
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 1.41, // Adjust this value based on your design
+
+
+    if(window.innerWidth < 1200){
+      var swiper1 = new Swiper(swiperContainer1, {
+        slidesPerView: 1, // Show 1.41 slides to get the partial slide effect
+        spaceBetween: 37, // Space between slides
+        centeredSlides: true,
+        loop: true,
+        speed: 1000,
+        initialSlide: 1, // Start from the second slide to show partial slides on both sides
+        autoplay: {
+          delay: 3000, // Time in ms between each slide transition
+          disableOnInteraction: false, // Continue autoplay after user interactions
         },
-      },
-      on: {
-        slideChangeTransitionEnd: function () {
-          var activeSlide = document.querySelector('.swiper-slide-active');
-          var subtitle = activeSlide.querySelector('.subtitleSlide');
-          var button = activeSlide.querySelector('.btnSlide');
+        breakpoints: {
+          1024: {
+            slidesPerView: 1, // Adjust this value based on your design
+          },
+        },
+        on: {
+          slideChangeTransitionEnd: function () {
+            var activeSlide = document.querySelector('.swiper-slide-active');
+            var subtitle = activeSlide.querySelector('.subtitleSlide');
+            var button = activeSlide.querySelector('.btnSlide');
 
-          // Remove animation classes from all slides
-          document.querySelectorAll('.subtitleSlide').forEach(function (el) {
-            el.style.animation = 'none';
-            el.style.opacity = '0';
-          });
-          document.querySelectorAll('.btnSlide').forEach(function (el) {
-            el.style.animation = 'none';
-            el.style.opacity = '0';
-          });
+            // Remove animation classes from all slides
+            document.querySelectorAll('.subtitleSlide').forEach(function (el) {
+              el.style.animation = 'none';
+              el.style.opacity = '0';
+            });
+            document.querySelectorAll('.btnSlide').forEach(function (el) {
+              el.style.animation = 'none';
+              el.style.opacity = '0';
+            });
 
-          // Add animation classes to the active slide's elements if they exist
-          if (subtitle) {
-            subtitle.style.animation = 'slideUp 0.5s ease forwards';
-          }
-          if (button) {
-            button.style.animation = 'slideUp 0.5s ease forwards';
+            // Add animation classes to the active slide's elements if they exist
+            if (subtitle) {
+              subtitle.style.animation = 'slideUp 0.5s ease forwards';
+            }
+            if (button) {
+              button.style.animation = 'slideUp 0.5s ease forwards';
+            }
           }
         }
-      }
-    });
+      });
+    }else {
+      var swiper1 = new Swiper(swiperContainer1, {
+        slidesPerView: 1.41, // Show 1.41 slides to get the partial slide effect
+        spaceBetween: 37, // Space between slides
+        centeredSlides: true,
+        loop: true,
+        speed: 1000,
+        initialSlide: 1, // Start from the second slide to show partial slides on both sides
+        autoplay: {
+          delay: 223000, // Time in ms between each slide transition
+          disableOnInteraction: false, // Continue autoplay after user interactions
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 1.41, // Adjust this value based on your design
+          },
+        },
+        on: {
+          slideChangeTransitionEnd: function () {
+            var activeSlide = document.querySelector('.swiper-slide-active');
+            var subtitle = activeSlide.querySelector('.subtitleSlide');
+            var button = activeSlide.querySelector('.btnSlide');
+
+            // Remove animation classes from all slides
+            document.querySelectorAll('.subtitleSlide').forEach(function (el) {
+              el.style.animation = 'none';
+              el.style.opacity = '0';
+            });
+            document.querySelectorAll('.btnSlide').forEach(function (el) {
+              el.style.animation = 'none';
+              el.style.opacity = '0';
+            });
+
+            // Add animation classes to the active slide's elements if they exist
+            if (subtitle) {
+              subtitle.style.animation = 'slideUp 0.5s ease forwards';
+            }
+            if (button) {
+              button.style.animation = 'slideUp 0.5s ease forwards';
+            }
+          }
+        }
+      });
+    }
+
   }
 
-  // Initialize Swiper 2 if the container exists
-  var swiperContainer2 = document.querySelector('.swiper-container2');
-  if (swiperContainer2) {
-    var swiper2 = new Swiper(swiperContainer2, {
-      slidesPerView: 2.7, // Show 3 slides
-      spaceBetween: 37, // Space between slides
-      centeredSlides: true,
-      loop: true,
-      initialSlide: 1, // Start from the second slide to show partial slides on both sides
-      autoplay: {
-        delay: 110000, // Time in ms between each slide transition
-        disableOnInteraction: false, // Continue autoplay after user interactions
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 2.7, // Adjust this value based on your design
+  // разная ширина, разная корусель
+  if(window.innerWidth < 1500){
+    // Initialize Swiper 2 if the container exists
+    var swiperContainer2 = document.querySelector('.swiper-container2');
+    if (swiperContainer2) {
+      var swiper2 = new Swiper(swiperContainer2, {
+        slidesPerView: 1.5, // Show 3 slides
+        spaceBetween: 37, // Space between slides
+        centeredSlides: true,
+        loop: true,
+        initialSlide: 1, // Start from the second slide to show partial slides on both sides
+        autoplay: {
+          delay: 110000, // Time in ms between each slide transition
+          disableOnInteraction: false, // Continue autoplay after user interactions
         },
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+        breakpoints: {
+          1024: {
+            slidesPerView: 1.5, // Adjust this value based on your design
+          },
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
+  } else {
+    var swiperContainer2 = document.querySelector('.swiper-container2');
+    if (swiperContainer2) {
+      var swiper2 = new Swiper(swiperContainer2, {
+        slidesPerView: 2.7, // Show 3 slides
+        spaceBetween: 37, // Space between slides
+        centeredSlides: true,
+        loop: true,
+        initialSlide: 1, // Start from the second slide to show partial slides on both sides
+        autoplay: {
+          delay: 110000, // Time in ms between each slide transition
+          disableOnInteraction: false, // Continue autoplay after user interactions
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 2.7, // Adjust this value based on your design
+          },
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
   }
+
 
   // Change file label text on file input change
   var fileInput = document.getElementById('file-input');
@@ -101,6 +177,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }, observerOptions);
 
   document.querySelectorAll('.titleSection').forEach(section => {
+    observer.observe(section);
+  });
+
+  document.querySelectorAll('.titleSupp').forEach(section => {
+    observer.observe(section);
+  });
+  document.querySelectorAll('.rightTitle').forEach(section => {
     observer.observe(section);
   });
 
@@ -267,6 +350,26 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+console.log('hi')
+
+    //   slide up animation
+    // Intersection Observer for anyQuestions form
+      const anyQuestionsSection = document.querySelector('.anyQuestions');
+
+      if (anyQuestionsSection) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              anyQuestionsSection.classList.add('visible');
+              observer.unobserve(anyQuestionsSection);
+            }
+          });
+        }, {
+          threshold: 0.3
+        });
+
+        observer.observe(anyQuestionsSection);
+      }
 
 });
 

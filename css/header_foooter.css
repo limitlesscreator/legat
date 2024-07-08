@@ -125,7 +125,7 @@ footer {
   height: 142px;
   position: absolute;
   left: 0;
-  top: 90px;
+  top: 0px;
 }
 
 .rightStick {
@@ -134,11 +134,15 @@ footer {
   height: 142px;
   position: absolute;
   right: 0;
-  top: 90px;
+  top: 0px;
 }
 
 .logoFooter {
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*margin: 0 auto;*/
   display: block;
   width: 220px;
   transition: 0.5s;
@@ -176,6 +180,8 @@ footer {
 .adress {
   text-align: center;
   margin-top: 67px;
+  position: relative;
+  bottom: -140px;
 }
 .adress img {
   margin-right: 10px;
@@ -216,6 +222,7 @@ footer {
 
 .firestPartFooter, .secondPartFooter, .thirdPartFooter {
   width: 33.3%;
+  position: relative;
 }
 
 .thirdPartFooter {
@@ -235,6 +242,16 @@ footer {
   height: 660px;
   background: #E0DEE4;
   position: relative;
+}
+.anyQuestions {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.anyQuestions.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .containerRelative {
   padding-top: 120px;
@@ -262,6 +279,7 @@ footer {
   display: flex;
   position: relative;
   left: -90px;
+
 }
 .titleQuestion {
   font-size: 47px;
@@ -384,4 +402,103 @@ footer {
   position: absolute;
   left: 0;
   top: -73px;
+}
+
+@media (max-width: 1400px){
+  .container{
+    width: 95%;
+  }
+  .gradientBlock{
+    position: relative;
+  }
+}
+
+@media (max-width: 1400px){
+.womanQuestion{
+  width: 400px;
+}
+  .formFlex{
+    padding-left: 272px;
+  }
+}
+
+@media (max-width: 1200px){
+  .logoFooter{
+    width: 155px;
+  }
+  .rightStick{
+   display: none;
+  }
+  .leftStick{
+   display: none;
+  }
+
+  .subQuestion{
+    margin-left: 30px;
+  }
+  .links{
+    width: 362px;
+  }
+  .womanQuestion{
+    left: auto;
+    width: 500px;
+    z-index: -1;
+    bottom: -40px;
+    right: -20px;
+  }
+  .formFlex{
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 80px;
+  }
+  .bigInputForm{
+    margin-left: 0;
+  }
+  .infoBlockQuestion{
+    width: 100%;
+  }
+  .flexTextQuestions{
+    left: 0;
+  }
+  .containerRelative{
+    padding: 0;
+  }
+  .littleInputForm{
+    width: 512px;
+  }
+  .flexSpaceBeetween{
+    width: 512px;
+    margin-top: 20px;
+  }
+  .btnKnowAbout{
+    margin-top: 0;
+  }
+  .anyQuestions{
+    height: 700px;
+  }
+  .thirdPartFooter{
+    padding-left: 101px;
+  }
+  .lastFooter div:first-child{
+    display: none;
+  }
+  .lastFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px
+  }
+
+}
+@media (max-width: 1000px){
+  .hideMobile{
+    display: none;
+  }
+}
+
+@media (max-width: 760px){
+
+}
+
+@media (max-width: 480px){
+
 }

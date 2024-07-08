@@ -160,7 +160,12 @@ body {
   margin-top: 70px;
   align-self: flex-end;
 }
-
+@media (max-width: 1200px) {
+  .btnSlideNoMargin {
+    position: relative;
+    margin-right: 30px;
+  }
+}
 .btnSendForm {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   background: #D9262D;
@@ -208,6 +213,11 @@ body {
   width: 321px;
   margin-top: 140px;
 }
+@media (max-width: 1200px) {
+  .elemS1 {
+    width: 286px;
+  }
+}
 .elemS1 img {
   width: 115px;
 }
@@ -244,17 +254,28 @@ body {
   background: #562C3E;
   border-radius: 10px;
 }
+@media (max-width: 1200px) {
+  .squareMarron {
+    width: 375px;
+    height: 374px;
+  }
+}
 .squareMarron img {
   position: absolute;
   bottom: 0;
   left: -33px;
+  width: 548px;
 }
 
 .supply {
   padding-top: 275px;
   background-image: url("../img/backgroundSquares.png");
 }
-
+@media (max-width: 1200px) {
+  .supply {
+    padding-top: 150px;
+  }
+}
 .gradientBlock {
   padding-top: 53px;
   width: 779px;
@@ -263,7 +284,14 @@ body {
   background-image: url("../img/gradientBgSupply.png");
   margin-top: 70px;
 }
-
+@media (max-width: 1200px) {
+  .gradientBlock {
+    width: 541px;
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 .titleSupp {
   font-size: 32px;
   font-family: "Roboto Slab", serif;
@@ -271,11 +299,21 @@ body {
   color: #562C3E;
   text-align: center;
 }
-
+@media (max-width: 1200px) {
+  .titleSupp {
+    text-align: left;
+    position: relative;
+    left: -354px;
+  }
+}
 .flexSupply {
   display: flex;
 }
-
+@media (max-width: 1200px) {
+  .flexSupply {
+    align-items: flex-end;
+  }
+}
 .supplySpanAfter {
   color: white;
   position: relative;
@@ -299,7 +337,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-
+@media (max-width: 1200px) {
+  .oneBox {
+    padding-left: 0;
+  }
+}
 .topTextGradient {
   color: #562C3E;
   width: 436px;
@@ -324,7 +366,12 @@ body {
   position: relative;
   background-image: url("../img/backgroundSquares.png");
 }
-
+@media (max-width: 1200px) {
+  .capabilities {
+    padding-bottom: 150px;
+    padding-top: 90px;
+  }
+}
 .services {
   display: flex;
   gap: 20px;
@@ -404,13 +451,26 @@ body {
   position: relative;
   bottom: -90px;
 }
-
+@media (max-width: 1200px) {
+  .cababCards {
+    margin-top: 75px;
+  }
+}
 .cabaCard {
   width: 436px;
   position: relative;
   z-index: 6;
 }
-
+@media (max-width: 1400px) {
+  .cabaCard {
+    width: 349px;
+  }
+}
+@media (max-width: 1200px) {
+  .cabaCard {
+    width: 300px;
+  }
+}
 .firstPartGrey {
   background: #9C9C9C;
   height: 81px;
@@ -423,7 +483,16 @@ body {
   top: -207px;
   transition: 0.5s;
 }
-
+@media (max-width: 1400px) {
+  .cabaCard:hover .abilityPicCards {
+    top: -150px;
+  }
+}
+@media (max-width: 1200px) {
+  .cabaCard:hover .abilityPicCards {
+    top: -100px;
+  }
+}
 .abilityPicCards {
   z-index: 1;
   position: absolute;
@@ -432,7 +501,17 @@ body {
   transform: translateX(-50%);
   transition: 0.5s;
 }
-
+@media (max-width: 1400px) {
+  .abilityPicCards {
+    width: 300px;
+    top: -57px;
+  }
+}
+@media (max-width: 1200px) {
+  .abilityPicCards {
+    width: 260px;
+  }
+}
 .secondPartWhite {
   z-index: 2;
   height: 140px;
@@ -459,7 +538,18 @@ body {
   display: flex;
   align-items: flex-end;
 }
-
+@media (max-width: 1350px) {
+  .textOnGrey {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .textOnGrey {
+    font-size: 19px;
+    line-height: 25px;
+    margin-left: 38px;
+  }
+}
 .secondPartWhite {
   display: flex;
 }
@@ -482,7 +572,11 @@ body {
   align-self: flex-end;
   margin-top: 140px;
 }
-
+@media (max-width: 1200px) {
+  .btnKnowMargin {
+    margin-top: 0;
+  }
+}
 .partWhiteBtn {
   width: 85px;
   height: 73px;
@@ -501,7 +595,11 @@ body {
   background: url("../img/knowAbout.png");
   background-size: cover;
 }
-
+@media (max-width: 1200px) {
+  .infoKnowAbout {
+    height: 374px;
+  }
+}
 .backgroundSquares {
   background-image: url("../img/backgroundSquares.png");
   background-position: top;
@@ -514,7 +612,11 @@ body {
   width: 100%;
   background: #E0DEE4;
 }
-
+@media (max-width: 1200px) {
+  .greyBlockForCapa {
+    display: none;
+  }
+}
 .titleAbout {
   color: white;
   font-family: "Roboto Slab", serif;
@@ -540,6 +642,12 @@ body {
   left: 94px;
   top: -60px;
   z-index: -1;
+  transition: 0.5s;
+}
+
+.titleAbout:hover .symbolCapa {
+  scale: 1.1;
+  transition: 0.5s;
 }
 
 .infoKnowAbout {
@@ -552,7 +660,12 @@ body {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   line-height: 19px;
 }
-
+@media (max-width: 1200px) {
+  .infoKnowAbout {
+    border-top: none;
+    padding-top: 0;
+  }
+}
 .marronBgPadding {
   color: white;
   background: #562C3E;
@@ -628,7 +741,7 @@ body {
 .ourBtnsSecondSlide {
   transition: 0.5s;
   position: absolute;
-  right: 33% !important;
+  right: 20% !important;
   top: 50% !important;
   background: white;
   height: 71px !important;
@@ -649,7 +762,7 @@ body {
   transition: 0.5s;
   position: absolute;
   top: 50% !important;
-  left: 33% !important;
+  left: 20% !important;
   z-index: 20;
   background: white;
   height: 71px !important;
@@ -712,10 +825,20 @@ body {
 
 .titleSection {
   opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateX(-200px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .titleSection.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.titleSupp {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.titleSupp.slide-in {
   opacity: 1;
   transform: translateX(0);
 }
@@ -738,7 +861,7 @@ body {
 .imgS1Elem {
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   margin: 0 auto;
 }
 
