@@ -39,7 +39,11 @@ body {
   padding-left: 117px;
   padding-top: 100px;
 }
-
+@media (max-width: 1000px) {
+  .swiper-slideV1 {
+    padding-left: 33px;
+  }
+}
 .swiper-slideV2 {
   position: relative;
   width: 665px;
@@ -56,7 +60,11 @@ body {
   bottom: 0;
   right: -2px;
 }
-
+@media (max-width: 1000px) {
+  .figureWhite {
+    width: 476px;
+  }
+}
 .swiper-slide-active {
   filter: none;
   opacity: 1;
@@ -235,7 +243,11 @@ body {
   align-items: center;
   border-radius: 5px;
 }
-
+@media (max-width: 1000px) {
+  .titleElemS1 {
+    width: 219px;
+  }
+}
 .subTitleElemS1 {
   width: 287px;
   padding: 20px 30px 39px 30px;
@@ -246,7 +258,13 @@ body {
   background: linear-gradient(180deg, rgb(166, 145, 154) 0%, rgb(86, 44, 62) 100%);
   height: 173px;
 }
-
+@media (max-width: 1000px) {
+  .subTitleElemS1 {
+    width: 219px;
+    height: 237px;
+    margin: 20px 0 0 0;
+  }
+}
 .squareMarron {
   position: relative;
   width: 528px;
@@ -274,6 +292,11 @@ body {
 @media (max-width: 1200px) {
   .supply {
     padding-top: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .supply {
+    padding-top: 100px;
   }
 }
 .gradientBlock {
@@ -306,12 +329,23 @@ body {
     left: -354px;
   }
 }
+@media (max-width: 1000px) {
+  .titleSupp {
+    left: 0;
+  }
+}
 .flexSupply {
   display: flex;
 }
 @media (max-width: 1200px) {
   .flexSupply {
     align-items: flex-end;
+  }
+}
+@media (max-width: 1000px) {
+  .flexSupply {
+    overflow: hidden;
+    padding-top: 10px;
   }
 }
 .supplySpanAfter {
@@ -471,6 +505,11 @@ body {
     width: 300px;
   }
 }
+@media (max-width: 1000px) {
+  .cabaCard {
+    width: 220px;
+  }
+}
 .firstPartGrey {
   background: #9C9C9C;
   height: 81px;
@@ -493,6 +532,11 @@ body {
     top: -100px;
   }
 }
+@media (max-width: 1000px) {
+  .cabaCard:hover .abilityPicCards {
+    top: -80px;
+  }
+}
 .abilityPicCards {
   z-index: 1;
   position: absolute;
@@ -510,6 +554,11 @@ body {
 @media (max-width: 1200px) {
   .abilityPicCards {
     width: 260px;
+  }
+}
+@media (max-width: 1000px) {
+  .abilityPicCards {
+    width: 220px;
   }
 }
 .secondPartWhite {
@@ -548,6 +597,11 @@ body {
     font-size: 19px;
     line-height: 25px;
     margin-left: 38px;
+  }
+}
+@media (max-width: 1000px) {
+  .textOnGrey {
+    margin-left: 13px;
   }
 }
 .secondPartWhite {
@@ -598,6 +652,11 @@ body {
 @media (max-width: 1200px) {
   .infoKnowAbout {
     height: 374px;
+  }
+}
+@media (max-width: 1000px) {
+  .infoKnowAbout {
+    width: 100%;
   }
 }
 .backgroundSquares {

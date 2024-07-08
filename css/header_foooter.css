@@ -489,12 +489,101 @@ footer {
   }
 
 }
-@media (max-width: 1000px){
+/* Burger Menu */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #562C3E;
+  border-radius: 2px;
+}
+
+@media (max-width: 1000px) {
   .hideMobile{
     display: none;
   }
-}
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    z-index: 10;
+  }
 
+  .links a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #EDEDED;
+    width: 100%;
+    background: white;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .burger-menu.active + .links {
+    display: flex;
+  }
+
+  .logo{
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    border-right: #E0DEE4 solid 1px;
+    border-left: #E0DEE4 solid 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    margin-left: 0;
+  }
+  .links a:hover {
+    opacity: 1;
+  }
+  .littleInputForm{
+    width: 100%;
+  }
+  .bigInputForm{
+    width: 100%;
+  }
+  .anyQuestions{
+    height: 1100px;
+    padding-top: 250px;
+
+  }
+  .womanQuestion{
+    width: 390px;
+    top: -114px;
+    right: auto;
+    left: 0;
+  }
+  .corner{
+    left: -345px;
+  }
+  .flexTextQuestions{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -200px;
+  }
+  .subQuestion{
+    width: 242px;
+    margin-left: 200px;
+  }
+
+}
 @media (max-width: 760px){
 
 }

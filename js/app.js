@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         speed: 1000,
         initialSlide: 1, // Start from the second slide to show partial slides on both sides
         autoplay: {
-          delay: 3000, // Time in ms between each slide transition
+          delay: 123000, // Time in ms between each slide transition
           disableOnInteraction: false, // Continue autoplay after user interactions
         },
         breakpoints: {
@@ -352,24 +352,57 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 console.log('hi')
 
-    //   slide up animation
+  if(window.innerWidth < 1500){
     // Intersection Observer for anyQuestions form
-      const anyQuestionsSection = document.querySelector('.anyQuestions');
+    const anyQuestionsSection = document.querySelector('.anyQuestions');
 
-      if (anyQuestionsSection) {
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              anyQuestionsSection.classList.add('visible');
-              observer.unobserve(anyQuestionsSection);
-            }
-          });
-        }, {
-          threshold: 0.3
+    if (anyQuestionsSection) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            anyQuestionsSection.classList.add('visible');
+            observer.unobserve(anyQuestionsSection);
+          }
         });
+      }, {
+        threshold: 0.02
+      });
 
-        observer.observe(anyQuestionsSection);
-      }
+      observer.observe(anyQuestionsSection);
+    }
+
+  }else {
+    // Intersection Observer for anyQuestions form
+    const anyQuestionsSection = document.querySelector('.anyQuestions');
+
+    if (anyQuestionsSection) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            anyQuestionsSection.classList.add('visible');
+            observer.unobserve(anyQuestionsSection);
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      observer.observe(anyQuestionsSection);
+    }
+
+  }
+
+    //   slide up animation
+
+
+  // Toggle Burger Menu
+    const burgerMenu = document.getElementById('burger-menu');
+    const navbar = document.getElementById('navbar');
+
+    burgerMenu.addEventListener('click', function () {
+      burgerMenu.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
 
 });
 
