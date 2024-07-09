@@ -34,6 +34,8 @@ header .container {
 }
 
 
+
+
 .logo {
   display: flex;
   margin-right: 76px;
@@ -582,10 +584,89 @@ footer {
     width: 242px;
     margin-left: 200px;
   }
-
+  .thirdPartFooter{
+    padding-left: 30px;
+  }
 }
 @media (max-width: 760px){
-
+  .logo{
+    width: 120px;
+  }
+  .logo img{
+    width: 70px;
+  }
+  .burger-menu span:nth-child(2){
+    display: none;
+  }
+  .mrLeftMobile{
+    margin-left: 0;
+  }
+  .contactUs img{
+    margin: 0 5px;
+  }
+  .titleSlide{
+    font-size: 32px;
+  }
+  .flexSpaceBeetween{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .titleQuestion{
+    font-size: 32px;
+    white-space: pre-wrap;
+  }
+  .oneLetterQueston{
+    font-size: 40px;
+  }
+  .womanQuestion{
+    width: 100%;
+    bottom: 336px;
+    top: auto;
+  }
+  .corner{
+    display: none;
+  }
+  .copyRight{
+    display: none;
+  }
+  .subQuestion{
+    margin-left: 0;
+  }
+  .flexContainer{
+    flex-direction: column;
+  }
+  footer{
+    height: auto;
+  }
+  .politic{
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .lastFooter{
+    padding: 0;
+  }
+  .questonsTextDarkVersion{
+    font-size: 32px;
+  }
+  .questonsText{
+    font-size: 32px;
+    padding: 15px 9px 15px 15px
+  }
+  .infoBlockQuestion{
+    height: auto;
+  }
+  .formFlex{
+    background: white;
+  }
+  .container{
+    width: 100%;
+  }
+  header{
+  padding: 0 15px;
+  }
 }
 
 @media (max-width: 480px){

@@ -95,7 +95,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // разная ширина, разная корусель
-  if(window.innerWidth < 1500){
+  if(window.innerWidth < 1500 && window.innerWidth > 770){
+    console.log('should not be here')
     // Initialize Swiper 2 if the container exists
     var swiperContainer2 = document.querySelector('.swiper-container2');
     if (swiperContainer2) {
@@ -120,7 +121,36 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       });
     }
-  } else {
+  }else if(window.innerWidth <= 770){
+    console.log('we here')
+    var swiperContainer2 = document.querySelector('.swiper-container2');
+    if (swiperContainer2) {
+      var swiper2 = new Swiper(swiperContainer2, {
+        slidesPerView: 1, // Show 3 slides
+        spaceBetween: 37, // Space between slides
+        centeredSlides: true,
+        loop: true,
+        initialSlide: 1, // Start from the second slide to show partial slides on both sides
+        autoplay: {
+          delay: 110000, // Time in ms between each slide transition
+          disableOnInteraction: false, // Continue autoplay after user interactions
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 1, // Adjust this value based on your design
+          },
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
+  }
+
+  else {
+    console.log('should not be here')
+
     var swiperContainer2 = document.querySelector('.swiper-container2');
     if (swiperContainer2) {
       var swiper2 = new Swiper(swiperContainer2, {
