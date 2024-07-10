@@ -382,47 +382,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 console.log('hi')
 
-  if(window.innerWidth < 1500){
-    // Intersection Observer for anyQuestions form
-    const anyQuestionsSection = document.querySelector('.anyQuestions');
-
-    if (anyQuestionsSection) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            anyQuestionsSection.classList.add('visible');
-            observer.unobserve(anyQuestionsSection);
-          }
-        });
-      }, {
-        threshold: 0.02
-      });
-
-      observer.observe(anyQuestionsSection);
-    }
-
-  }else {
-    // Intersection Observer for anyQuestions form
-    const anyQuestionsSection = document.querySelector('.anyQuestions');
-
-    if (anyQuestionsSection) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            anyQuestionsSection.classList.add('visible');
-            observer.unobserve(anyQuestionsSection);
-          }
-        });
-      }, {
-        threshold: 0.3
-      });
-
-      observer.observe(anyQuestionsSection);
-    }
-
-  }
-
-    //   slide up animation
 
 
   // Toggle Burger Menu
