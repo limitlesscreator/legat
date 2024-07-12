@@ -38,20 +38,23 @@
     <div class="logo">
       <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
     </div>
-    <div class="links">
+    <div class="burger-menu" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="links" id="navbar">
       <a href="#">Услуги</a>
       <a href="./about.html">О компании</a>
       <a href="./ourProjects.html">Проекты</a>
       <a href="./contacts.html">Контакты</a>
     </div>
     <div class="contactUs">
-      <div><img src="./img/mail.svg" alt="mail">info@lagat.ru</div>
-      <div class="mrLeftMobile"><img src="./img/phone.png" alt="mail">+7 (965) 202-39-58</div>
+      <div><img src="./img/mail.svg" alt="mail"><span class="hideMobile">info@lagat.ru</span></div>
+      <div class="mrLeftMobile"><img src="./img/phone.png" alt="mail"><span class="hideMobile">+7 (965) 202-39-58</span></div>
     </div>
-
   </div>
 </header>
-
 <div class="aboutBg">
   <div class="container">
       <div class="aboutText">Компания «ТОРОС» основана в 2015 году.
@@ -76,7 +79,7 @@
     <div class="flexUnder">
       <img class="illustration" src="img/underFlex1.png" alt="illustration">
       <div class="infoBlock">
-        <div class="boldPartText">Производство электроники – это сложный и многогранный процесс, который включает в себя создание и сборку различных электронных устройств, начиная от микрочипов и печатных плат до конечных продуктов.</div>
+        <div class="boldPartText"><span class="boldOnMobile">Производство электроники</span> – это сложный и многогранный процесс, который включает в себя создание и сборку различных электронных устройств, начиная от микрочипов и печатных плат до конечных продуктов.</div>
         <div class="underLinePartText">Наша компания сотрудничает только с проверенными и акредитованными по междунардным стандарам производителями.</div>
         <div>Главным критерием выбора производителей является грамотное управление предприятием и подтверждения выпуска качественной продукции по соответствию требований сертификата ISO 9001.</div>
       </div>
@@ -89,8 +92,10 @@
     <div class="forFly">
       <img src="./img/plane.png" class="plane" alt="plane">
     </div>
-    <div class="rightTitle">
+    <div class="hideOverflow">
+      <div class="rightTitle">
       <span class="redBgAddition"><span class="fz40">Э</span>ффективная </span>логистика
+    </div>
     </div>
     <div class="textInfoTruck">
       <img class="truck" src="./img/truck2.png" alt="">
@@ -122,7 +127,7 @@
         </div>
 
       </div>
-        <img src="./img/infoDescrioptionInfo.png" alt="tech">
+        <img class="infoDescriptionPng" src="./img/infoDescrioptionInfo.png" alt="tech">
     </div>
      <div class="btnRightSide">
        <button class="btnContract">Наши проекты</button>

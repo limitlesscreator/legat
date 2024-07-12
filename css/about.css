@@ -189,7 +189,11 @@ body {
   color: #562C3E;
   font-family: "Roboto Slab", sans-serif;
 }
-
+@media (max-width: 1400px) {
+  .titleSection {
+    right: 0;
+  }
+}
 .polygonRed {
   position: relative;
   top: -2px;
@@ -743,7 +747,26 @@ body {
   background-position: 126px -115px;
   background-repeat: no-repeat;
 }
-
+@media (max-width: 1777px) {
+  .aboutBg {
+    background-position: 3px -115px;
+  }
+}
+@media (max-width: 1400px) {
+  .aboutBg {
+    background-position: -51px -115px;
+    background-size: auto;
+    height: 790px;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutBg {
+    background: url("../img/backgroundMobileAboutMe.png");
+    background-size: contain;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+  }
+}
 .aboutText {
   width: 448px;
   border-bottom: solid 1px #CDC0C6;
@@ -751,34 +774,112 @@ body {
   padding-bottom: 25px;
   margin-left: 100px;
 }
-
+@media (max-width: 1400px) {
+  .aboutText {
+    margin-left: 23px;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutText {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .aboutText {
+    margin-left: 16px;
+    padding-top: 380px;
+  }
+}
 .flexUnder {
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 1200px) {
+  .flexUnder {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1400px) {
+  .infoDescriptionPng {
+    width: 685px;
+  }
+}
+@media (max-width: 1200px) {
+  .infoDescriptionPng {
+    width: 529px;
+    height: 333px;
+  }
+}
 .illustration {
   margin-top: 100px;
 }
-
+@media (max-width: 1400px) {
+  .illustration {
+    height: 396px;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .illustration {
+    width: 50%;
+    height: 370px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .illustration {
+    height: 418px;
+    object-fit: cover;
+  }
+}
 .infoBlock {
   background-image: linear-gradient(to right, #E0DEE4, white);
   padding: 100px;
   width: 667px;
   border-radius: 10px;
 }
-
+@media (max-width: 1777px) {
+  .infoBlock {
+    width: 628px;
+  }
+}
+@media (max-width: 1400px) {
+  .infoBlock {
+    padding: 100px 15px 0 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .infoBlock {
+    padding: 32px 15px 0 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .infoBlock {
+    padding: 20px;
+  }
+}
 .boldPartText {
   font-weight: bold;
 }
-
+@media (max-width: 1000px) {
+  .boldPartText {
+    font-weight: normal;
+  }
+}
 .underLinePartText {
   margin-top: 30px;
   border-bottom: #CDC0C6 solid 1px;
   padding-bottom: 25px;
   margin-bottom: 25px;
 }
-
+@media (max-width: 1000px) {
+  .underLinePartText {
+    margin-top: 19px;
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 19px;
+  }
+}
 .flySection {
   background-image: linear-gradient(to right, #E0DEE4, white);
   background-size: 500px;
@@ -786,6 +887,32 @@ body {
   background-repeat: no-repeat;
   position: relative;
   padding-bottom: 60px;
+}
+@media (max-width: 1777px) {
+  .flySection {
+    background-image: linear-gradient(to right, white, white);
+  }
+}
+@media (max-width: 1400px) {
+  .flySection {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .flySection {
+    background-size: 369px;
+    background-image: linear-gradient(to right, #E0DEE4, white);
+  }
+}
+@media (max-width: 1000px) {
+  .flySection {
+    background-size: 338px;
+  }
+}
+.hideOverflow {
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .rightTitle {
@@ -796,7 +923,11 @@ body {
   position: relative;
   font-weight: 600;
 }
-
+@media (max-width: 1200px) {
+  .rightTitle {
+    margin-left: 497px;
+  }
+}
 .forFly {
   position: relative;
 }
@@ -810,43 +941,108 @@ body {
   top: -50px;
   left: 0;
 }
-
+@media (max-width: 1400px) {
+  .plane {
+    width: 240px;
+  }
+}
 .textInfoTruck {
   height: 768px;
   position: relative;
 }
-
+@media (max-width: 1400px) {
+  .textInfoTruck {
+    height: auto;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 1200px) {
+  .textInfoTruck {
+    position: relative;
+    right: -25px;
+    overflow: hidden;
+  }
+}
 .truck {
   position: absolute;
   top: 90px;
   right: -150px;
   z-index: -1;
 }
-
+@media (max-width: 1777px) {
+  .truck {
+    z-index: 1;
+    width: 977px;
+    right: 88px;
+    top: 145px;
+  }
+}
+@media (max-width: 1400px) {
+  .truck {
+    right: 30px;
+    top: 65px;
+    width: 855px;
+  }
+}
+@media (max-width: 1200px) {
+  .truck {
+    right: -233px;
+  }
+}
+@media (max-width: 1000px) {
+  .truck {
+    right: -439px;
+  }
+}
 .textInfoFirstPart {
   width: 278px;
   padding-top: 280px;
 }
-
+@media (max-width: 1777px) {
+  .textInfoFirstPart {
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (max-width: 1400px) {
+  .textInfoFirstPart {
+    padding-top: 140px;
+  }
+}
 .secondTextInfo {
   width: 512px;
   margin-top: 62px;
   padding-bottom: 27px;
   border-bottom: solid 1px #CDC0C6;
 }
-
+@media (max-width: 1777px) {
+  .secondTextInfo {
+    position: relative;
+    z-index: 2;
+  }
+}
 .thirtTextILnfo {
   font-weight: 600;
   width: 568px;
   margin-top: 24px;
 }
-
+@media (max-width: 1777px) {
+  .thirtTextILnfo {
+    position: relative;
+    z-index: 2;
+  }
+}
 .infoDescription {
   display: flex;
   margin-top: 70px;
   justify-content: space-between;
 }
 
+@media (max-width: 1400px) {
+  .elemsDescription {
+    margin-right: 24px;
+  }
+}
 .redElem {
   margin-top: 30px;
   width: 399px;
@@ -856,7 +1052,16 @@ body {
   border-radius: 10px;
   position: relative;
 }
-
+@media (max-width: 1400px) {
+  .redElem {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .redElem {
+    margin-top: 0;
+  }
+}
 .triangle {
   position: absolute;
   bottom: -25px;
@@ -875,7 +1080,11 @@ body {
   padding-bottom: 20px;
   border-bottom: solid 1px #CDC0C6;
 }
-
+@media (max-width: 1400px) {
+  .underRed {
+    width: auto;
+  }
+}
 .lastDescription {
   margin-top: 32px;
 }
@@ -898,6 +1107,16 @@ body {
   margin-top: 70px;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1200px) {
+  .btnRightSide {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  .boldOnMobile {
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
