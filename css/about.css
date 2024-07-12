@@ -928,6 +928,12 @@ body {
     margin-left: 497px;
   }
 }
+@media (max-width: 1000px) {
+  .rightTitle {
+    text-align: center;
+    margin-left: 204px;
+  }
+}
 .forFly {
   position: relative;
 }
