@@ -278,7 +278,6 @@ footer {
   display: flex;
   position: relative;
   left: -90px;
-
 }
 .titleQuestion {
   font-size: 47px;
@@ -467,7 +466,7 @@ footer {
     width: 512px;
   }
   .flexSpaceBeetween{
-    width: 512px;
+    max-width: 512px;
     margin-top: 20px;
   }
   .btnKnowAbout{
@@ -561,7 +560,6 @@ footer {
   .anyQuestions{
     height: 1100px;
     padding-top: 250px;
-
   }
   .womanQuestion{
     width: 390px;
@@ -587,24 +585,20 @@ footer {
   }
 }
 @media (max-width: 760px){
-  .flexTextQuestions{
-    top: -240px;
-    align-items: start;
-    padding-left: 10px;
+  .subQuestion{
+    margin-left: 250px;
+    font-size: 14px;
+    position: relative;
+    top: -40px
+  }
+  .womanQuestion{
+    top: -93px;
+    width: 340px;
+  }
+  .titleQuestion{
+    font-size: 40px;
+  }
 
-  }
-  .bigInputForm{
-    background: #E0DEE4 ;
-  }
-
-  .anyQuestions{
-    height: auto;
-    padding-top: 0;
-  }
-  .containerRelative{
-    height: auto;
-    align-items: start;
-  }
   .logo{
     width: 120px;
   }
@@ -623,43 +617,17 @@ footer {
   .titleSlide{
     font-size: 32px;
   }
-  .flexSpaceBeetween{
-    width: 100%;
-    margin-top: 20px;
-    flex-direction: column;
-    justify-content: left;
-    align-items: start;
-  }
-  .titleQuestion{
-    font-size: 32px;
-    white-space: pre-wrap;
-  }
-  .oneLetterQueston{
-    font-size: 40px;
-  }
-  .womanQuestion{
-    width: 250px;
-    position: relative;
-    z-index: 5;
-    bottom: -98px;
-    top: auto;
-    left: -8px
-  }
+
+
   .adapClassQuestion{
     position: relative;
     left: 50px;
   }
-  .corner{
-    display: none;
-  }
+
   .copyRight{
     display: none;
   }
-  .subQuestion{
-    margin-left: 0;
-    position: relative;
-    top: 157px;
-  }
+
   .flexContainer{
     flex-direction: column;
     align-items: start;
@@ -680,39 +648,14 @@ footer {
   .lastFooter{
     padding: 0;
   }
-  .questonsTextDarkVersion{
-    font-size: 32px;
-  }
-  .questonsText{
-    font-size: 32px;
-    padding: 15px 9px 15px 15px
-  }
-  .infoBlockQuestion{
-    height: auto;
-  }
-  .formFlex{
-    background: white;
-    padding: 0 10px;
-    padding-top: 110px;
-    margin-top: -155px;
-    padding-bottom: 80px;
-  }
-  .container{
-    width: 100%;
-  }
+
+
   header{
   padding: 0 15px;
   }
-  .littleInputForm{
-    background: #E0DEE4;
-  }
-  .btnKnowAbout{
-    width: 100%;
-    margin-top: 20px;
-  }
-  .file-upload{
-    margin-left: 0;
-  }
+
+
+
   .firestPartFooter, .secondPartFooter, .thirdPartFooter {
     width: 100%;
     position: relative;
@@ -762,10 +705,95 @@ footer {
     padding-left: 18px;
     left: 0;
   }
+  .questonsText{
+    font-size: 40px;
+    padding: 31px 5px 15px 15px;
+  }
+  .oneLetterQueston{
+    font-size: 70px;
+  }
 }
 
 @media (max-width: 480px){
+  .file-upload{
+    margin-left: 0;
+  }
+  .questonsTextDarkVersion{
+    font-size: 32px;
+  }
+  .questonsText{
+    font-size: 32px;
+    padding: 15px 9px 15px 15px
+  }
 
+  .anyQuestions{
+    height: auto;
+    padding-top: 0;
+  }
+  .womanQuestion{
+    width: 250px;
+    position: relative;
+    z-index: 5;
+    bottom: -98px;
+    top: auto;
+    left: -8px
+  }
+  .formFlex{
+    background: white;
+    padding: 0 10px;
+    padding-top: 110px;
+    margin-top: -155px;
+    padding-bottom: 80px;
+  }
+  .littleInputForm{
+    background: #E0DEE4;
+  }
+  .subQuestion{
+    margin-left: 0;
+    position: relative;
+    top: 157px;
+  }
+  .titleQuestion{
+    font-size: 32px;
+    white-space: pre-wrap;
+  }
+  .oneLetterQueston{
+    font-size: 40px;
+  }
+  .bigInputForm{
+    background: #E0DEE4 ;
+  }
+  .corner{
+    display: none;
+  }
+  .flexSpaceBeetween{
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+  }
+
+  .infoBlockQuestion{
+    height: auto;
+  }
+  .containerRelative{
+    height: auto;
+    align-items: start;
+  }
+  .container{
+    width: 100%;
+  }
+  .flexTextQuestions{
+    top: -240px;
+    align-items: start;
+    padding-left: 10px;
+  }
+  .btnKnowAbout{
+    width: 100%;
+    margin-top: 20px;
+  }
 }
+
 
 

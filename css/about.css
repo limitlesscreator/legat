@@ -194,6 +194,11 @@ body {
     right: 0;
   }
 }
+@media (max-width: 760px) {
+  .titleSection {
+    padding-left: 15px;
+  }
+}
 .polygonRed {
   position: relative;
   top: -2px;
@@ -739,7 +744,12 @@ body {
   position: relative;
   top: -100px;
 }
-
+@media (max-width: 900px) {
+  .checkedProvider {
+    top: 0;
+    padding-top: 50px;
+  }
+}
 .aboutBg {
   height: 960px;
   background: url("../img/backgroundAbout.png");
@@ -767,6 +777,11 @@ body {
     background-repeat: no-repeat;
   }
 }
+@media (max-width: 900px) {
+  .aboutBg {
+    height: auto;
+  }
+}
 .aboutText {
   width: 448px;
   border-bottom: solid 1px #CDC0C6;
@@ -790,6 +805,11 @@ body {
     padding-top: 380px;
   }
 }
+@media (max-width: 760px) {
+  .aboutText {
+    padding-top: 217px;
+  }
+}
 .flexUnder {
   display: flex;
   justify-content: space-between;
@@ -797,6 +817,11 @@ body {
 @media (max-width: 1200px) {
   .flexUnder {
     margin-top: 50px;
+  }
+}
+@media (max-width: 760px) {
+  .flexUnder {
+    flex-direction: column;
   }
 }
 @media (max-width: 1400px) {
@@ -808,6 +833,14 @@ body {
   .infoDescriptionPng {
     width: 529px;
     height: 333px;
+  }
+}
+@media (max-width: 900px) {
+  .infoDescriptionPng {
+    width: 340px;
+    height: 380px;
+    object-fit: cover;
+    object-position: left;
   }
 }
 .illustration {
@@ -830,6 +863,17 @@ body {
   .illustration {
     height: 418px;
     object-fit: cover;
+  }
+}
+@media (max-width: 760px) {
+  .illustration {
+    width: 100%;
+    background-image: linear-gradient(to right, #E0DEE4, white);
+    border-radius: unset;
+    padding: 35px 16px;
+  }
+  .illustration img {
+    border-radius: 10px;
   }
 }
 .infoBlock {
@@ -856,6 +900,11 @@ body {
 @media (max-width: 1000px) {
   .infoBlock {
     padding: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .infoBlock {
+    border-radius: unset;
   }
 }
 .boldPartText {
@@ -907,6 +956,11 @@ body {
 @media (max-width: 1000px) {
   .flySection {
     background-size: 338px;
+  }
+}
+@media (max-width: 900px) {
+  .flySection {
+    margin-top: 100px;
   }
 }
 .hideOverflow {
@@ -967,6 +1021,11 @@ body {
     position: relative;
     right: -25px;
     overflow: hidden;
+  }
+}
+@media (max-width: 900px) {
+  .textInfoTruck {
+    right: -19px;
   }
 }
 .truck {
