@@ -98,17 +98,32 @@ body {
   background-image: url("../img/slide-1.png");
   background-size: cover;
 }
-
+@media (max-width: 760px) {
+  .slideBg1 .littleTitle {
+    left: 0;
+    bottom: -32px;
+  }
+}
 .slideBg2 {
   background-image: url("../img/slide-2.png");
   background-size: cover;
 }
-
 .slideBg3 {
   background-image: url("../img/slide-3.png");
   background-size: cover;
 }
-
+@media (max-width: 760px) {
+  .slideBg3 .littleTitle {
+    left: 0;
+    bottom: -37px;
+    font-size: 24px;
+  }
+  .slideBg3 .secondLittleTitle {
+    font-size: 24px;
+    left: 0;
+    top: 118px;
+  }
+}
 .carousel_block {
   font-family: "Roboto Slab", serif;
 }
@@ -275,7 +290,9 @@ body {
 }
 @media (max-width: 760px) {
   .elemsS1 {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
     justify-content: center;
     row-gap: 40px;
   }
@@ -412,6 +429,7 @@ body {
 }
 @media (max-width: 760px) {
   .gradientBlock {
+    padding-top: 63px;
     width: 100%;
     background-image: none;
   }
@@ -438,12 +456,12 @@ body {
 @media (max-width: 760px) {
   .titleSupp {
     text-align: center;
-    width: 100%;
     left: 0;
     padding: 0;
-    margin: 0;
     top: -200px;
     line-height: 51px;
+    width: 512px;
+    margin: 0 auto;
   }
 }
 .flexSupply {
@@ -628,9 +646,11 @@ body {
 @media (max-width: 760px) {
   .cababCards {
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin-top: 20px;
     row-gap: 80px;
+    align-items: center;
   }
 }
 .cabaCard {
