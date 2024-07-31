@@ -2,48 +2,84 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize Swiper 1 if the container exists
   var swiperContainer1 = document.querySelector('.swiper-container');
   if (swiperContainer1) {
+
     var swiper1Options = {
-      slidesPerView: window.innerWidth < 1200 ? 1 : 1.41,
+      slidesPerView: 'auto', // Вместо фиксированного значения
       spaceBetween: 37,
       centeredSlides: true,
       loop: true,
       speed: 1000,
-      initialSlide: 1,
+      initialSlide: 2,
       autoplay: {
         delay: window.innerWidth < 1200 ? 123000 : 223000,
         disableOnInteraction: false,
       },
+      effect: 'slide', // Убедитесь, что используется эффект 'slide'
+      // Добавьте следующие параметры:
+      watchSlidesProgress: true,
+      virtualTranslate: false,
       breakpoints: {
-        1024: {
-          slidesPerView: window.innerWidth < 1200 ? 1 : 1.41,
+        // Настройки для мобильных устройств
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
         },
-      },
-      on: {
-        slideChangeTransitionEnd: function () {
-          var activeSlide = document.querySelector('.swiper-slide-active');
-          var subtitle = activeSlide.querySelector('.subtitleSlide');
-          var button = activeSlide.querySelector('.btnSlide');
-
-          // Remove animation classes from all slides
-          document.querySelectorAll('.subtitleSlide').forEach(function (el) {
-            el.style.animation = 'none';
-            el.style.opacity = '0';
-          });
-          document.querySelectorAll('.btnSlide').forEach(function (el) {
-            el.style.animation = 'none';
-            el.style.opacity = '0';
-          });
-
-          // Add animation classes to the active slide's elements if they exist
-          if (subtitle) {
-            subtitle.style.animation = 'slideUp 0.5s ease forwards';
-          }
-          if (button) {
-            button.style.animation = 'slideUp 0.5s ease forwards';
-          }
+        // Настройки для планшетов
+        768: {
+          slidesPerView: 1.2,
+          spaceBetween: 30
+        },
+        // Настройки для десктопов
+        1200: {
+          slidesPerView: 1.41,
+          spaceBetween: 37
         }
-      }
+      },
+      // Остальные настройки...
     };
+
+    //work good
+    // var swiper1Options = {
+    //   slidesPerView: window.innerWidth < 1200 ? 1 : 1.41,
+    //   spaceBetween: 37,
+    //   centeredSlides: true,
+    //   effect: 'slide',
+    //   loop: true,
+    //   speed: 1000,
+    //   initialSlide: 2,
+    //   autoplay: {
+    //     delay: window.innerWidth < 1200 ? 123000 : 223000,
+    //     disableOnInteraction: false,
+    //   },
+    //
+    //   on: {
+    //     slideChangeTransitionEnd: function () {
+    //       var activeSlide = document.querySelector('.swiper-slide-active');
+    //       var subtitle = activeSlide.querySelector('.subtitleSlide');
+    //       var button = activeSlide.querySelector('.btnSlide');
+    //
+    //       // Remove animation classes from all slides
+    //       document.querySelectorAll('.subtitleSlide').forEach(function (el) {
+    //         el.style.animation = 'none';
+    //         el.style.opacity = '0';
+    //       });
+    //       document.querySelectorAll('.btnSlide').forEach(function (el) {
+    //         el.style.animation = 'none';
+    //         el.style.opacity = '0';
+    //       });
+    //
+    //       // Add animation classes to the active slide's elements if they exist
+    //       if (subtitle) {
+    //         subtitle.style.animation = 'slideUp 0.5s ease forwards';
+    //       }
+    //       if (button) {
+    //         button.style.animation = 'slideUp 0.5s ease forwards';
+    //       }
+    //     }
+    //   }
+    // };
+
+
     var swiper1 = new Swiper(swiperContainer1, swiper1Options);
   }
 

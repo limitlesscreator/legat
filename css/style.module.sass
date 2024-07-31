@@ -60,7 +60,8 @@ body
     padding-left: 33px
 
   @media (max-width: 760px)
-    padding-left: 17px
+    padding-left: 8px
+    padding-right: 8px
     padding-top: 40px
 
 
@@ -128,6 +129,7 @@ body
       bottom: -32px
 
   @media (max-width: 480px)
+    background-size: unset
 
 //  1 slide
 .slideBg2
@@ -143,6 +145,7 @@ body
   @media (max-width: 760px)
 
   @media (max-width: 480px)
+    background-size: unset
 
     //slide 2
 .slideBg3
@@ -167,6 +170,8 @@ body
       top: 118px
 
   @media (max-width: 480px)
+    background-size: unset
+
 .carousel_block
   font-family: "Roboto Slab", serif
 .titleSlide
@@ -189,7 +194,22 @@ body
     padding: 15px
 
   @media (max-width: 480px)
+    text-align: center
+    margin: 0 auto
+    display: block
+    width: 80%
 
+br
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    display: none
 
 .littleTitle
   white-space: nowrap
@@ -214,7 +234,9 @@ body
     line-height: 32px
     width: 100%
   @media (max-width: 480px)
-    width: 169px
+    width: 100%
+    left: 0 !important
+    text-align: center
 
 
 .secondLittleTitle
@@ -224,6 +246,17 @@ body
   right: -321px
   text-shadow: 0px 5px 5px rgba(0,0,0,0.25)
   position: absolute
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    right: 0
+    width: 100%
 
 
 
@@ -1147,11 +1180,12 @@ body
 .swiper-slide-active .subtitleSlide, .swiper-slide-active .btnSlide
   animation: slideUp 0.5s ease forwards
 
-
+.swiper-slide
+  transition: transform 0.3s ease
 .ourBtnsSecondSlide
   transition: 0.5s
   position: absolute
-  right: 20% !important
+  right: 35% !important
   top: 50% !important
   background: white
   height: 71px !important
@@ -1183,7 +1217,7 @@ body
   transition: 0.5s
   position: absolute
   top: 50% !important
-  left: 20% !important
+  left: 35% !important
   z-index: 20
   background: white
   height: 71px !important
@@ -1378,7 +1412,7 @@ body
 
   .ourBtnsSecondSlide,
   .ourBtnsSecondSlidePrev
-    opacity: 0
+    //opacity: 0
     visibility: hidden
     transition: opacity 0.3s ease, visibility 0.3s ease
     @media (max-width: 1350px)

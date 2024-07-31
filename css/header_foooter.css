@@ -504,6 +504,7 @@ footer {
   width: 100%;
   background: #562C3E;
   border-radius: 2px;
+  transition: 0.3s;
 }
 
 @media (max-width: 999px) {
@@ -518,6 +519,7 @@ footer {
     position: absolute;
     top: 72px;
     left: 0;
+    transition: 0.3s;
     z-index: 10;
   }
 
@@ -530,10 +532,27 @@ footer {
 
   .burger-menu {
     display: flex;
+    transition: 0.3s;
   }
 
   .burger-menu.active + .links {
     display: flex;
+    transition: 0.3s;
+
+  }
+
+  .burger-menu.active span:first-child{
+    position: relative;
+    top: 6px;
+    transition: 0.3s;
+    transform: rotateZ(45deg);
+  }
+
+  .burger-menu.active span:nth-child(3){
+    position: relative;
+    top: -6px;
+    transition: 0.3s;
+    transform: rotateZ(-45deg);
   }
 
   .logo{
@@ -710,6 +729,20 @@ footer {
   }
   .oneLetterQueston{
     font-size: 70px;
+  }
+}
+
+
+
+@media (max-width: 999px) {
+  .contactUs img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 335px) {
+  .contactUs img {
+    width: 28px;
   }
 }
 

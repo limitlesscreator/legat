@@ -85,6 +85,21 @@ body {
   background-size: cover;
 }
 
+.slideBg4 {
+  background-image: url("../img/slide-1.png");
+  background-size: cover;
+}
+
+.slideBg5 {
+  background-image: url("../img/slide-2.png");
+  background-size: cover;
+}
+
+.slideBg6 {
+  background-image: url("../img/slide-3.png");
+  background-size: cover;
+}
+
 .carousel_block {
   font-family: "Roboto Slab", serif;
 }
