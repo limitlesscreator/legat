@@ -8,7 +8,11 @@
   width: 1356px;
   margin: 0 auto;
 }
-
+@media (max-width: 760px) {
+  .container {
+    width: 100% !important;
+  }
+}
 body {
   font-family: "Exo 2", sans-serif;
   padding-top: 72px;
@@ -218,6 +222,11 @@ body {
   position: relative;
   top: -2px;
   right: -20px;
+}
+@media (max-width: 480px) {
+  .polygonRed {
+    display: none;
+  }
 }
 
 .elemsS1 {
@@ -543,6 +552,11 @@ body {
   margin-right: 5px;
   border-radius: 10px;
 }
+@media (max-width: 480px) {
+  .redBgAddition {
+    padding: 10px 18px;
+  }
+}
 
 .knowAbout {
   padding-top: 116px;
@@ -669,6 +683,11 @@ body {
   right: -2px;
 }
 
+@media (max-width: 760px) {
+  .corner {
+    display: none;
+  }
+}
 .dateInCorner {
   position: absolute;
   bottom: 0;
@@ -797,6 +816,14 @@ body {
     height: auto;
   }
 }
+@media (max-width: 480px) {
+  .aboutBg {
+    background: url("../img/thirdMobile.png");
+    background-repeat: no-repeat;
+    margin-top: 30px;
+  }
+}
+
 .aboutText {
   width: 448px;
   border-bottom: solid 1px #CDC0C6;
@@ -822,7 +849,10 @@ body {
 }
 @media (max-width: 760px) {
   .aboutText {
-    padding-top: 217px;
+    padding-top: 154px;
+    border-bottom: none;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 .flexUnder {
@@ -858,6 +888,23 @@ body {
     object-position: left;
   }
 }
+@media (max-width: 760px) {
+  .infoDescriptionPng {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .anyQuestions {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .anyQuestions {
+    padding: 0;
+  }
+}
+
 .illustration {
   margin-top: 100px;
 }
@@ -882,10 +929,9 @@ body {
 }
 @media (max-width: 760px) {
   .illustration {
-    width: 100%;
-    background-image: linear-gradient(to right, #E0DEE4, white);
-    border-radius: unset;
-    padding: 35px 16px;
+    width: 95%;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
   }
   .illustration img {
     border-radius: 10px;
@@ -920,6 +966,7 @@ body {
 @media (max-width: 760px) {
   .infoBlock {
     border-radius: unset;
+    width: 100%;
   }
 }
 .boldPartText {
@@ -978,12 +1025,23 @@ body {
     margin-top: 100px;
   }
 }
+@media (max-width: 760px) {
+  .flySection {
+    margin-top: 195px;
+    padding-bottom: 40px;
+  }
+}
 .hideOverflow {
   overflow: hidden;
   padding-bottom: 10px;
   padding-top: 5px;
 }
-
+@media (max-width: 760px) {
+  .hideOverflow {
+    position: relative;
+    top: -151px;
+  }
+}
 .rightTitle {
   color: #562C3E;
   font-family: "Roboto Slab", serif;
@@ -1001,6 +1059,11 @@ body {
   .rightTitle {
     text-align: center;
     margin-left: 204px;
+  }
+}
+@media (max-width: 760px) {
+  .rightTitle {
+    margin-left: 0;
   }
 }
 .forFly {
@@ -1043,6 +1106,11 @@ body {
     right: -19px;
   }
 }
+@media (max-width: 760px) {
+  .textInfoTruck {
+    right: 0;
+  }
+}
 .truck {
   position: absolute;
   top: 90px;
@@ -1074,6 +1142,25 @@ body {
     right: -439px;
   }
 }
+@media (max-width: 760px) {
+  .truck {
+    top: 155px;
+    mix-blend-mode: darken;
+  }
+}
+@media (max-width: 480px) {
+  .truck {
+    width: 754px;
+    top: 179px;
+  }
+}
+
+@media (max-width: 410px) {
+  .paddingOnMobile {
+    padding-left: 100px;
+  }
+}
+
 .textInfoFirstPart {
   width: 278px;
   padding-top: 280px;
@@ -1089,6 +1176,14 @@ body {
     padding-top: 140px;
   }
 }
+@media (max-width: 760px) {
+  .textInfoFirstPart {
+    padding-top: 34px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .secondTextInfo {
   width: 512px;
   margin-top: 62px;
@@ -1099,6 +1194,18 @@ body {
   .secondTextInfo {
     position: relative;
     z-index: 2;
+  }
+}
+@media (max-width: 900px) {
+  .secondTextInfo {
+    border-bottom: none;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 760px) {
+  .secondTextInfo {
+    margin-top: 311px;
   }
 }
 .thirtTextILnfo {
@@ -1112,15 +1219,31 @@ body {
     z-index: 2;
   }
 }
+@media (max-width: 760px) {
+  .thirtTextILnfo {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 .infoDescription {
   display: flex;
   margin-top: 70px;
   justify-content: space-between;
 }
-
+@media (max-width: 760px) {
+  .infoDescription {
+    flex-direction: column-reverse;
+    padding: 0 10px;
+  }
+}
 @media (max-width: 1400px) {
   .elemsDescription {
     margin-right: 24px;
+  }
+}
+@media (max-width: 760px) {
+  .elemsDescription {
+    margin-right: 0;
   }
 }
 .redElem {
@@ -1142,6 +1265,12 @@ body {
     margin-top: 0;
   }
 }
+@media (max-width: 900px) {
+  .redElem {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
 .triangle {
   position: absolute;
   bottom: -25px;
@@ -1152,7 +1281,11 @@ body {
   border-right: 24px solid transparent;
   border-top: 35px solid #D9262D;
 }
-
+@media (max-width: 760px) {
+  .triangle {
+    display: none;
+  }
+}
 .underRed {
   font-weight: bold;
   margin-top: 50px;
@@ -1165,6 +1298,14 @@ body {
     width: auto;
   }
 }
+@media (max-width: 480px) {
+  .underRed {
+    border-bottom: none;
+    margin-top: 25px;
+    font-weight: normal;
+  }
+}
+
 .lastDescription {
   margin-top: 32px;
 }
@@ -1191,6 +1332,11 @@ body {
 @media (max-width: 1200px) {
   .btnRightSide {
     margin-top: 28px;
+  }
+}
+@media (max-width: 760px) {
+  .btnRightSide {
+    display: none;
   }
 }
 @media (max-width: 1000px) {
