@@ -3,6 +3,7 @@ body
   background: #F7F6F9
 
 
+
 *
   margin: 0
   padding: 0
@@ -12,6 +13,16 @@ body
   background: url("../img/productionBgStart.png")
   background-size: cover
   height: 415px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    padding: 10px
 
 .titleSlide
   margin-top: 80px
@@ -29,6 +40,16 @@ body
   background: #D9262D
   padding: 32px 4px 5px 10px
   border-radius: 10px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+    padding: 46px 4px 5px 10px
+
+  @media (max-width: 480px)
 
 .titleMain
   margin-top: 20px
@@ -47,12 +68,61 @@ body
   opacity: 0
   transform: translateX(-100%)
   transition: opacity 0.5s ease, transform 0.5s ease
+  @media (max-width: 1500px)
+    transform: translateX(-80%)
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+    padding: 40px 10px
+
+  @media (max-width: 480px)
+    margin-right: 10px
+    margin-left: 10px
   &.slide-in
     opacity: 1
     transform: translateX(0)
 
+
+.anyQuestions
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    margin-top: 0 !important
+
+.womanQuestion
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    position: relative
+    bottom: -133px!important
+
 .bigLatter
   font-size: 96px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    font-size: 57px
+
 
 .listElems
   margin-top: 28px
@@ -265,6 +335,17 @@ body
   color: #896C78
   text-decoration: none
   height: 36px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1000px)
+    display: none
+
+  @media (max-width: 900px)
+
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
   a
     color: #896C78
     margin: 0 30px
@@ -276,11 +357,44 @@ body
 
 .elemProduction
   width: 235px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1000px)
+    width: 350px
+    margin-bottom: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    img
+      width: 100px
+
+  @media (max-width: 900px)
+    width: 200px
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+
+
 
 .listElemsProduction
   display: flex
   justify-content: space-evenly
   margin-top: 150px
+  &:last-child
+    margin-top: 0
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 1000px)
+    flex-wrap: wrap
+    column-gap: 50px
+  @media (max-width: 900px)
+    column-gap: 128px
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
 
 .titleComponent
   font-size: 20px

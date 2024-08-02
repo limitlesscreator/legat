@@ -205,7 +205,6 @@ footer {
 .social img {
   margin-right: 24px;
 }
-
 .lastFooter {
   background: #E0DEE4;
   height: 30px;
@@ -725,10 +724,11 @@ footer {
     padding-left: 18px;
     left: 0;
   }
-  .questonsText{
+  .questonsText,.questonsTextDarkVersion{
     font-size: 40px;
     padding: 31px 5px 15px 15px;
   }
+
   .oneLetterQueston{
     font-size: 70px;
   }
@@ -757,12 +757,16 @@ footer {
   }
   .questonsTextDarkVersion{
     font-size: 32px;
+    padding: 15px 9px 15px 15px
   }
   .questonsText{
     font-size: 32px;
     padding: 15px 9px 15px 15px
   }
-
+  .newpaddingMobileDark{
+    position: relative;
+    right: -60px
+  }
   .anyQuestions{
     height: auto;
     padding-top: 0;

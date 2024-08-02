@@ -14,6 +14,11 @@ body {
   background-size: cover;
   height: 415px;
 }
+@media (max-width: 480px) {
+  .bannerContact {
+    padding: 10px;
+  }
+}
 
 .titleSlide {
   margin-top: 80px;
@@ -35,7 +40,11 @@ body {
   padding: 32px 4px 5px 10px;
   border-radius: 10px;
 }
-
+@media (max-width: 760px) {
+  .redBgTitile {
+    padding: 46px 4px 5px 10px;
+  }
+}
 .titleMain {
   margin-top: 20px;
   color: white;
@@ -54,13 +63,47 @@ body {
   transform: translateX(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+@media (max-width: 1500px) {
+  .titleMain {
+    transform: translateX(-80%);
+  }
+}
+@media (max-width: 760px) {
+  .titleMain {
+    padding: 40px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .titleMain {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 .titleMain.slide-in {
   opacity: 1;
   transform: translateX(0);
 }
 
+@media (max-width: 480px) {
+  .anyQuestions {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .womanQuestion {
+    position: relative;
+    bottom: -133px !important;
+  }
+}
+
 .bigLatter {
   font-size: 96px;
+}
+@media (max-width: 480px) {
+  .bigLatter {
+    font-size: 57px;
+  }
 }
 
 .listElems {
@@ -305,6 +348,11 @@ body {
   text-decoration: none;
   height: 36px;
 }
+@media (max-width: 1000px) {
+  .underHeader {
+    display: none;
+  }
+}
 .underHeader a {
   color: #896C78;
   margin: 0 30px;
@@ -319,13 +367,42 @@ body {
 .elemProduction {
   width: 235px;
 }
-
+@media (max-width: 1000px) {
+  .elemProduction {
+    width: 350px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elemProduction img {
+    width: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .elemProduction {
+    width: 200px;
+  }
+}
 .listElemsProduction {
   display: flex;
   justify-content: space-evenly;
   margin-top: 150px;
 }
-
+.listElemsProduction:last-child {
+  margin-top: 0;
+}
+@media (max-width: 1000px) {
+  .listElemsProduction {
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+}
+@media (max-width: 900px) {
+  .listElemsProduction {
+    column-gap: 128px;
+  }
+}
 .titleComponent {
   font-size: 20px;
   font-weight: 600;

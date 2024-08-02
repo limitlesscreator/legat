@@ -13,6 +13,11 @@ body {
   background-size: cover;
   height: 366px;
 }
+@media (max-width: 480px) {
+  .bannerContact {
+    padding: 0 15px;
+  }
+}
 
 .titleSlide {
   margin-top: 80px;
@@ -24,11 +29,56 @@ body {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   color: #562C3E;
 }
+@media (max-width: 480px) {
+  .titleSlide {
+    padding-left: 0;
+    padding-top: 47px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .womanQuestion {
+    width: 450px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .womanQuestion {
+    top: -108px !important;
+    width: 385px !important;
+  }
+}
+@media (max-width: 760px) {
+  .womanQuestion {
+    width: 350px !important;
+  }
+}
+@media (max-width: 480px) {
+  .womanQuestion {
+    width: 250px !important;
+    position: relative !important;
+    z-index: 5 !important;
+    bottom: -95px !important;
+    top: auto !important;
+    left: -8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .anyQuestions {
+    margin-top: 100px !important;
+  }
+}
 
 .componentImg {
   position: absolute;
   left: 0;
   top: 5px;
+}
+@media (max-width: 480px) {
+  .componentImg {
+    top: -40px;
+    width: 100px;
+  }
 }
 
 .redBgTitile {
@@ -63,7 +113,11 @@ body {
 .bigLatter {
   font-size: 96px;
 }
-
+@media (max-width: 760px) {
+  .bigLatter {
+    font-size: 76px;
+  }
+}
 .listElems {
   margin-top: 28px;
   padding-bottom: 114px;
@@ -289,6 +343,11 @@ body {
   text-decoration: none;
   height: 36px;
 }
+@media (max-width: 1000px) {
+  .underHeader {
+    display: none;
+  }
+}
 .underHeader a {
   color: #896C78;
   margin: 0 30px;
@@ -449,6 +508,11 @@ body {
 .dropdownContainer {
   margin-top: 47px;
 }
+@media (max-width: 480px) {
+  .dropdownContainer {
+    padding: 0 15px;
+  }
+}
 .dropdownContainer .dropdownItem {
   border-bottom: 1px solid #ccc;
   background: #E0DEE4;
@@ -477,6 +541,11 @@ body {
   transition: max-height 0.3s ease-out;
   padding: 0 20px;
 }
+@media (max-width: 480px) {
+  .dropdownContainer .dropdownItem .dropdownContent {
+    overflow: auto;
+  }
+}
 .dropdownContainer .dropdownItem.active .dropdownContent {
   max-height: 1000px;
 }
@@ -491,8 +560,20 @@ body {
   padding-bottom: 20px;
   padding-left: 128px;
 }
+@media (max-width: 480px) {
+  .flexUl {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
 .flexUl ul {
   width: 320px;
+}
+@media (max-width: 480px) {
+  .flexUl ul {
+    width: 100%;
+  }
 }
 .flexUl ul li {
   margin-bottom: 22px;
@@ -511,6 +592,11 @@ body {
   color: #562C3E;
   margin-bottom: 25px;
 }
+@media (max-width: 760px) {
+  .textInfoDropDown li {
+    width: 100%;
+  }
+}
 .textInfoDropDown li::marker {
   color: #D9262D;
 }
@@ -523,6 +609,12 @@ body {
   margin-top: 37px;
   margin-left: 20px;
 }
+@media (max-width: 760px) {
+  .textInfoDropDownThree ul {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+}
 .textInfoDropDownThree li {
   list-style: decimal;
   margin-left: 19px;
@@ -530,6 +622,11 @@ body {
   color: #562C3E;
   margin-bottom: 22px;
   padding-left: 20px;
+}
+@media (max-width: 760px) {
+  .textInfoDropDownThree li {
+    width: 100%;
+  }
 }
 .textInfoDropDownThree li::marker {
   color: #D9262D;
@@ -541,11 +638,20 @@ body {
   padding-bottom: 40px;
   width: 1053px;
 }
-
+@media (max-width: 1200px) {
+  .section4 {
+    width: 100%;
+  }
+}
 .technicalCapabilities {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+}
+@media (max-width: 480px) {
+  .technicalCapabilities {
+    width: 800px;
+  }
 }
 .technicalCapabilities th, .technicalCapabilities td {
   border: 1px solid #ddd;
@@ -581,6 +687,11 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 480px) {
+  .titleTech {
+    padding: 30px 20px;
+  }
 }
 
 table ul li {

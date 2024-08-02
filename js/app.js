@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        console.log('Элемент виден:', entry.target); // Логирование видимости
         entry.target.classList.add('slide-in');
         observer.unobserve(entry.target);
       }
@@ -151,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.querySelectorAll('.titleMain').forEach(section => {
+    console.log('Обнаружен элемент .titleMain:', section); // Логирование элементов
     observer.observe(section);
   });
 
