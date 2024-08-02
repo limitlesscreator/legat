@@ -208,16 +208,33 @@ document.addEventListener('DOMContentLoaded', function () {
       zoom: 16,
       controls: ['zoomControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
     });
+    // Map 1
+    var myMap11 = new ymaps.Map("map11", {
+      center: [55.726923, 37.694235], // Coordinates for the first address
+      zoom: 16,
+      controls: ['zoomControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
+    });
 
     var placemark1 = new ymaps.Placemark([55.726923, 37.694235], {
       hintContent: 'г. Москва, Скотопрогонная, 35 стр. 5',
       balloonContent: '<strong>г. Москва, Скотопрогонная, 35 стр. 5</strong><br>Пн-Вс 8:00-18:00'
     });
+    var placemark11 = new ymaps.Placemark([55.726923, 37.694235], {
+      hintContent: 'г. Москва, Скотопрогонная, 35 стр. 5',
+      balloonContent: '<strong>г. Москва, Скотопрогонная, 35 стр. 5</strong><br>Пн-Вс 8:00-18:00'
+    });
 
     myMap1.geoObjects.add(placemark1);
+    myMap11.geoObjects.add(placemark11);
 
     // Map 2
     var myMap2 = new ymaps.Map("map2", {
+      center: [55.786521, 37.722585], // Coordinates for the second address
+      zoom: 16,
+      controls: ['zoomControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
+    });
+    // Map 2
+    var myMap22 = new ymaps.Map("map22", {
       center: [55.786521, 37.722585], // Coordinates for the second address
       zoom: 16,
       controls: ['zoomControl', 'typeSelector', 'fullscreenControl', 'routeButtonControl']
@@ -228,7 +245,13 @@ document.addEventListener('DOMContentLoaded', function () {
       balloonContent: '<strong>Москва, ул. Ткацкая, 5 стр. 4</strong><br>Пн-Вс 9:00-21:00'
     });
 
+    var placemark22 = new ymaps.Placemark([55.786521, 37.722585], {
+      hintContent: 'Москва, ул. Ткацкая, 5 стр. 4',
+      balloonContent: '<strong>Москва, ул. Ткацкая, 5 стр. 4</strong><br>Пн-Вс 9:00-21:00'
+    });
+
     myMap2.geoObjects.add(placemark2);
+    myMap22.geoObjects.add(placemark22);
   }
 });
 

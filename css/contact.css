@@ -43,7 +43,18 @@ body {
   margin-bottom: 52px;
   position: relative;
 }
-
+@media (max-width: 1000px) {
+  .sectionAdress {
+    width: 350px;
+  }
+}
+@media (max-width: 760px) {
+  .sectionAdress {
+    width: 100%;
+    margin-bottom: 0;
+    height: 145px;
+  }
+}
 .flexMap {
   margin-top: 114px;
   display: flex;
@@ -126,7 +137,27 @@ body {
   position: relative;
   top: -30px;
 }
-
+@media (max-width: 760px) {
+  .rightSection {
+    display: none;
+  }
+}
+.mobilemap {
+  display: none;
+  border-bottom: solid 1px #CDC0C6;
+  padding-bottom: 20px;
+  margin-bottom: 70px;
+}
+.mobilemap div {
+  width: 100%;
+  height: 288px;
+  border-radius: 20px;
+}
+@media (max-width: 760px) {
+  .mobilemap {
+    display: block;
+  }
+}
 .underMapDescription {
   margin-top: 80px;
 }
@@ -139,11 +170,32 @@ body {
   height: 1px;
   background: #CDC0C6;
 }
-
+@media (max-width: 760px) {
+  .bottomRightStick {
+    display: none;
+  }
+}
+.bottomStickMobile {
+  right: 20px;
+  width: 457px;
+  height: 1px;
+  background: #CDC0C6;
+  display: none;
+}
+@media (max-width: 760px) {
+  .bottomStickMobile {
+    display: block;
+  }
+}
 .titleMain {
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+@media (max-width: 1550px) {
+  .titleMain {
+    transform: translateX(-80%);
+  }
 }
 .titleMain.slide-in {
   opacity: 1;
