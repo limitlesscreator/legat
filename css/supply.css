@@ -175,7 +175,21 @@ body {
 .elementList {
   width: 436px;
 }
-
+@media (max-width: 1450px) {
+  .elementList {
+    width: 350px;
+  }
+}
+@media (max-width: 1160px) {
+  .elementList {
+    width: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .elementList {
+    width: 250px;
+  }
+}
 .imgContainer {
   width: 100%;
   height: 270px;
@@ -184,7 +198,11 @@ body {
   display: flex;
   align-items: baseline;
 }
-
+@media (max-width: 1000px) {
+  .imgContainer {
+    height: 150px;
+  }
+}
 .angleProject {
   position: absolute;
   bottom: -2px;
@@ -193,12 +211,16 @@ body {
 
 .hoverIncrease {
   transition: 0.5s;
-  width: 436px;
+  width: 100%;
   position: relative;
   left: 0px;
-  top: 0px;
+  top: 30px !important;
 }
-
+@media (max-width: 1000px) {
+  .hoverIncrease {
+    top: 0 !important;
+  }
+}
 .dateCorner {
   position: absolute;
   bottom: 20px;
@@ -214,7 +236,11 @@ body {
   padding: 12px 20px;
   border-radius: 10px;
 }
-
+@media (max-width: 1000px) {
+  .titleElem {
+    background: none;
+  }
+}
 .descPart {
   display: flex;
   margin-bottom: 9px;
@@ -251,11 +277,6 @@ body {
   color: #D9262D;
 }
 
-.specialThirdRelative {
-  position: relative;
-  bottom: -43px;
-}
-
 .specialFirstRelative {
   position: relative;
   bottom: -10px;
@@ -274,10 +295,6 @@ body {
 .specialSix {
   position: relative;
   bottom: -27px;
-}
-
-.hoverIncrease {
-  top: 30px !important;
 }
 
 .lineThrough {

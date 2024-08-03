@@ -304,8 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 //dropdown code on printMetalPAge
-document.addEventListener('DOMContentLoaded', function() {
-  if (window.location.pathname.endsWith('printmetal.html')) {
+  if (window.location.pathname.endsWith('printMetal.html') || window.location.pathname.endsWith('printmetal.html')) {
 
     const dropdownItems = document.querySelectorAll('.dropdownItem');
 
@@ -336,4 +335,3 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerMenu.classList.toggle('active');
     navbar.classList.toggle('active');
   });
-});

@@ -35,6 +35,11 @@ body {
 .sectionAdress img {
   width: 90px;
 }
+@media (max-width: 480px) {
+  .sectionAdress img {
+    width: 75px;
+  }
+}
 
 .sectionAdress {
   display: flex;
@@ -55,9 +60,21 @@ body {
     height: 145px;
   }
 }
+@media (max-width: 480px) {
+  .sectionAdress {
+    overflow: hidden;
+  }
+}
+
 .flexMap {
   margin-top: 114px;
   display: flex;
+}
+
+@media (max-width: 480px) {
+  .mapSection {
+    padding: 0 15px;
+  }
 }
 
 .titleMain {
@@ -86,10 +103,24 @@ body {
   margin-top: 24px;
 }
 
+@media (max-width: 480px) {
+  .leftSection {
+    width: 100%;
+  }
+}
+
 .titleAdress {
   font-weight: 600;
   font-family: "Roboto Slab", serif;
   font-size: 20px;
+}
+@media (max-width: 480px) {
+  .titleAdress {
+    white-space: nowrap;
+    position: relative;
+    top: -38px;
+    left: -84px;
+  }
 }
 
 .containerAdress {
@@ -97,19 +128,43 @@ body {
   position: relative;
   top: -5px;
 }
+@media (max-width: 480px) {
+  .containerAdress {
+    padding-left: 12px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 
 .subtitleAdress {
   margin-top: 33px;
   font-size: 16px;
+}
+@media (max-width: 480px) {
+  .subtitleAdress {
+    margin-top: -10px;
+  }
 }
 
 .subtitleAdressSpecialMargin {
   margin-top: 42px;
   font-size: 16px;
 }
+@media (max-width: 480px) {
+  .subtitleAdressSpecialMargin {
+    margin-top: 0;
+  }
+}
 
 .additionalWidth {
   width: 100px !important;
+}
+@media (max-width: 480px) {
+  .additionalWidth {
+    width: 80px !important;
+  }
 }
 
 .contactImg {

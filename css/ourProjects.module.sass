@@ -6,6 +6,21 @@ body
   background: url("../img/ourProjectsBanner.png")
   background-size: cover
   height: 308px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    background: url("../img/banerTabletOourProjects.png")
+    background-size: cover
+
+
+  @media (max-width: 760px)
+    background: url("../img/banerMobileOourProjects.png")
+    background-size: cover
+
+  @media (max-width: 480px)
+    padding: 0 15px
 
 .titleSlide
   margin-top: 80px
@@ -37,22 +52,68 @@ body
   opacity: 0
   transform: translateX(-100%)
   transition: opacity 0.5s ease, transform 0.5s ease
+  @media (max-width: 1550px)
+    transform: translateX(-80%)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    height: auto
+    padding: 10px
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+
   &.slide-in
     opacity: 1
     transform: translateX(0)
 
 .bigLatter
   font-size: 96px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    font-size: 68px
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
 
 .listElems
   margin-top: 28px
   padding-bottom: 164px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    padding: 0 15px
 
 .list
   display: flex
   flex-wrap: wrap
   row-gap: 89px
   justify-content: space-between
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    column-gap: 25px
+
+  @media (max-width: 760px)
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  @media (max-width: 480px)
 
 .lineUnder
   width: 100%
@@ -63,6 +124,16 @@ body
   background: #CDC0C6
   margin-top: 24px
   z-index: 5
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    display: none
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
 
 
 .selection
@@ -93,6 +164,17 @@ body
   position: relative
   width: 309px
   margin-top: 102px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    margin-top: 20px
+    width: 100%
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
 
 
 .custom-select
@@ -113,6 +195,16 @@ body
   padding-right: 30px
   font-weight: 600
   cursor: pointer
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
 
 .custom-options
   position: absolute
@@ -147,6 +239,17 @@ body
 
 .elementList
   width: 436px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1000px)
+    width: 339px
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    width: 100%
 
 .imgContainer
   width: 100%
@@ -165,12 +268,41 @@ body
   position: relative
   left: 0px
   top: 0px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1000px)
+    width: 100%
+
+  @media (max-width: 900px)
+    height: 270px
+    width: 340px
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    width: 100%
+    object-fit: cover
+    object-position: -70px
+
 
 .hoverIncrease:hover
   width: 523px
   transition: 0.5s
   left: -30px
   top: -30px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+    left: 0
+    top: 0
+    width: 100%
+    scale: 1.4
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    scale: 1.2
 
 .dateCorner
   position: absolute
@@ -187,14 +319,45 @@ body
 .descPart
   display: flex
   margin-bottom: 9px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    flex-direction: column
 
 .leftDesc
   width: 190px
   font-size: 15px
   border-bottom: 1px dashed #CDC0C6
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    border-bottom: none
 
 .rightDesc
   margin-left: 5px
+  @media (max-width: 1350px)
+
+  @media (max-width: 1200px)
+
+  @media (max-width: 900px)
+
+  @media (max-width: 760px)
+
+  @media (max-width: 480px)
+    font-weight: 600
+    margin-left: 0
 
 .descriptionSwipe2
   margin-top: 30px
