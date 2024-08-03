@@ -47,6 +47,24 @@ body {
   transform: translateX(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+@media (max-width: 1500px) {
+  .titleMain {
+    transform: translateX(-80%);
+  }
+}
+@media (max-width: 760px) {
+  .titleMain {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .titleMain {
+    flex-wrap: wrap;
+    justify-content: left;
+    height: auto;
+    padding: 10px;
+  }
+}
 .titleMain.slide-in {
   opacity: 1;
   transform: translateX(0);
@@ -55,10 +73,19 @@ body {
 .bigLatter {
   font-size: 96px;
 }
-
+@media (max-width: 900px) {
+  .bigLatter {
+    font-size: 47px;
+  }
+}
 .listElems {
   margin-top: 28px;
   padding-bottom: 114px;
+}
+@media (max-width: 480px) {
+  .listElems {
+    padding: 0 10px;
+  }
 }
 
 .list {
@@ -67,6 +94,16 @@ body {
   row-gap: 89px;
   justify-content: space-between;
   margin-top: 150px;
+}
+@media (max-width: 760px) {
+  .list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .list {
+    margin-top: 75px;
+  }
 }
 
 .listNoMargin {
@@ -85,6 +122,11 @@ body {
   background: #CDC0C6;
   margin-top: 24px;
   z-index: 5;
+}
+@media (max-width: 480px) {
+  .lineUnder {
+    display: none;
+  }
 }
 
 .selection {
@@ -175,7 +217,16 @@ body {
 .elementList {
   width: 436px;
 }
-
+@media (max-width: 1400px) {
+  .elementList {
+    width: 32%;
+  }
+}
+@media (max-width: 760px) {
+  .elementList {
+    width: 100%;
+  }
+}
 .imgContainer {
   width: 100%;
   height: 177px;
@@ -184,7 +235,11 @@ body {
   display: flex;
   align-items: baseline;
 }
-
+@media (max-width: 900px) {
+  .imgContainer {
+    border-radius: 10px;
+  }
+}
 .angleProject {
   position: absolute;
   bottom: -2px;
@@ -197,6 +252,33 @@ body {
   position: relative;
   left: 0px;
   top: 0px;
+}
+@media (max-width: 760px) {
+  .hoverIncrease {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .hoverIncrease {
+    width: 483px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .womanQuestion {
+    top: -72px !important;
+  }
+}
+@media (max-width: 760px) {
+  .womanQuestion {
+    width: 100%;
+    top: -11px !important;
+  }
+}
+@media (max-width: 480px) {
+  .womanQuestion {
+    top: 95px !important;
+  }
 }
 
 .dateCorner {
@@ -214,7 +296,12 @@ body {
   padding: 12px 20px;
   border-radius: 10px;
 }
-
+@media (max-width: 1100px) {
+  .titleElem {
+    padding: 12px 110px 12px 12px;
+    font-size: 20px;
+  }
+}
 .descPart {
   display: flex;
   margin-bottom: 9px;
@@ -285,6 +372,11 @@ body {
   text-decoration: none;
   height: 36px;
 }
+@media (max-width: 1000px) {
+  .underHeader {
+    display: none;
+  }
+}
 .underHeader a {
   color: #896C78;
   margin: 0 30px;
@@ -317,6 +409,37 @@ body {
   padding-bottom: 103px;
 }
 
+.mobilethreedots {
+  display: none;
+}
+@media (max-width: 900px) {
+  .mobilethreedots {
+    display: unset;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .mobilethreedots {
+    top: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .newLine {
+    display: block;
+    font-size: 16px;
+    margin-top: 50px;
+    width: 291px;
+  }
+}
+@media (max-width: 480px) {
+  .newLine {
+    width: 282px;
+  }
+}
+
 .titleSection {
   margin-top: 270px;
   width: 576px;
@@ -330,11 +453,54 @@ body {
   transform: translateX(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+@media (max-width: 1500px) {
+  .titleSection {
+    transform: translateX(-80%);
+    margin-top: 170px;
+  }
+}
+@media (max-width: 900px) {
+  .titleSection {
+    margin-top: 0;
+  }
+}
+@media (max-width: 760px) {
+  .titleSection {
+    width: 292px;
+  }
+}
+@media (max-width: 480px) {
+  .titleSection {
+    font-size: 29px;
+    width: 270px;
+  }
+}
 .titleSection.slide-in {
   opacity: 1;
   transform: translateX(0);
 }
 
+@media (max-width: 1500px) {
+  .contractsRightSide {
+    width: 582px;
+    margin-top: 46px;
+  }
+}
+@media (max-width: 1250px) {
+  .contractsRightSide {
+    width: 505px;
+  }
+}
+@media (max-width: 900px) {
+  .contractsRightSide {
+    width: 433px;
+  }
+}
+@media (max-width: 760px) {
+  .contractsRightSide {
+    width: 100%;
+  }
+}
 .marronBgPadding {
   color: white;
   background: #562C3E;
@@ -350,8 +516,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 760px) {
+  .picRightSide {
+    flex-direction: column;
+  }
+}
 .nineElems {
+  position: relative;
   margin-top: 33px;
   display: flex;
   justify-content: space-between;
@@ -361,13 +532,53 @@ body {
   width: 86%;
   margin: 33px auto 0;
 }
-
+@media (max-width: 1400px) {
+  .nineElems {
+    scale: 0.8;
+    width: 1164px;
+  }
+}
+@media (max-width: 1250px) {
+  .nineElems {
+    scale: 0.8;
+    width: 1023px;
+    margin: 0 auto;
+    font-size: 19px;
+  }
+}
+@media (max-width: 1100px) {
+  .nineElems {
+    width: 900px;
+  }
+}
+@media (max-width: 1000px) {
+  .nineElems {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 900px) {
+  .nineElems {
+    scale: 1;
+    margin: 60px auto 90px auto;
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .nineElems {
+    justify-content: center;
+  }
+}
 .flexImg {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
+@media (max-width: 1000px) {
+  .lastElemContr {
+    margin: 0 auto;
+  }
+}
 .numberInFlex {
   font-size: 64px;
   position: relative;
@@ -390,25 +601,108 @@ body {
   top: 71px;
   right: -221px;
 }
-
+@media (max-width: 1250px) {
+  .contrSnake {
+    right: -177px;
+  }
+}
+@media (max-width: 1100px) {
+  .contrSnake {
+    right: -123px;
+    width: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .contrSnake {
+    display: none;
+    right: 300px;
+    width: 230px;
+  }
+}
+.contrSnakeMobile {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .contrSnakeMobile {
+    position: absolute;
+    height: 792px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contrSnakeMobile img {
+    width: 150px;
+  }
+}
+@media (max-width: 760px) {
+  .contrSnakeMobile {
+    display: none;
+  }
+}
 .connectionLine {
   position: absolute;
   bottom: -64px;
   left: 147px;
   width: 921px;
 }
-
+@media (max-width: 1250px) {
+  .connectionLine {
+    width: 777px;
+  }
+}
+@media (max-width: 1100px) {
+  .connectionLine {
+    width: 662px;
+  }
+}
+@media (max-width: 1000px) {
+  .connectionLine {
+    display: none;
+  }
+}
 .connectionLineSecond {
   position: absolute;
   bottom: -86px;
   left: 127px;
   width: 948px;
 }
-
+@media (max-width: 1250px) {
+  .connectionLineSecond {
+    width: 777px;
+  }
+}
+@media (max-width: 1100px) {
+  .connectionLineSecond {
+    width: 677px;
+  }
+}
+@media (max-width: 1000px) {
+  .connectionLineSecond {
+    display: none;
+  }
+}
 .additionMargin {
   margin-top: 30px;
 }
 
+body {
+  background: #F7F6F9 !important;
+}
+
+@media (max-width: 1350px) {
+  .containerRelative {
+    padding-top: 42px !important;
+  }
+}
+@media (max-width: 1350px) {
+  .anyQuestions {
+    margin-top: 0 !important;
+  }
+}
 .ourProjectsInfo {
   display: flex;
   align-items: center;
@@ -417,6 +711,16 @@ body {
   background: none;
   color: rgb(86, 44, 62);
   font-size: 16px;
+}
+@media (max-width: 1250px) {
+  .ourProjectsInfo {
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .ourProjectsInfo {
+    justify-content: center;
+  }
 }
 
 .btnContract {
@@ -436,6 +740,11 @@ body {
 .ourPortfolio {
   margin-right: 50px;
   font-weight: 600;
+}
+@media (max-width: 480px) {
+  .ourPortfolio {
+    display: none;
+  }
 }
 
 .hoverIncrease:hover {
